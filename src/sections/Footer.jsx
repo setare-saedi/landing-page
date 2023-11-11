@@ -36,7 +36,6 @@ function Footer() {
           <div className=' flex lg:flex-row flex-col justify-between items-center gap-4 my-4'>
             <div className=' text-white flex flex-col'>
               <ul className=' list-none space-y-2 lg:text-right text-center'>
-                <li><a href='#'>لورم متن</a></li>
                 <li><a href='#'>متن فارسی لورم</a></li>
                 <li><a href='#'>متن ساختگی لورم</a></li>
                 <li><a href='#'> متن ساده لورم</a></li>
