@@ -9,14 +9,14 @@ function Footer() {
         <div className=' flex flex-col   bg-black px-12 py-10'>
           <div className=' flex lg:flex-row flex-col gap-4 items-center justify-between'>
             <div className=' flex gap-4 '>
-             <a>
+             <a href='#'>
                <ImFacebook className='  hover:bg-violet-200 bg-white p-2 w-12 h-12 rounded-full' />
               </a>
-              <a>
+              <a  href='#'>
 
               <FaTwitter className=' hover:bg-violet-200 bg-white p-2 w-12 h-12 rounded-full' />
               </a>
-              <a>
+              <a  href='#'>
 
               <PiInstagramLogoFill className=' hover:bg-violet-200 bg-white p-2 w-12 h-12 rounded-full' />
               </a>
