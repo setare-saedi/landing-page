@@ -15,7 +15,7 @@ function Header({navLink}) {
           <ul className='flex flex-1 flex-row text-lg justify-center items-center gap-10 max-lg:hidden'>
             {navLink.map(item => <div key={item.id}><a href={item.href}>{item.label}</a></div>)}
           </ul>
-          <a href="" className='flex items-center cursor-pointer'>
+          <a href="#" className='flex items-center cursor-pointer'>
             <span>Setare</span>
             <img src='./logo/star.png' width={40} height={40} alt='logo' />
           </a>
