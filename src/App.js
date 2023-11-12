@@ -109,7 +109,7 @@ function App() {
             <div className='  xl:w-3/5 overflow-hidden flex justify-center relative  '>
               <div className=' baner-img overflow-hidden'>
               </div>
-              <img src='./img/6p.png' className=' overflow-hidden z-50 relative' width='710px' height='500px' alt='baner' />
+              <img src='./img/6p.png' className=' overflow-hidden z-40 relative' width='710px' height='500px' alt='baner' />
             </div>
           </div>
         </section>
