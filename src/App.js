@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useState } from 'react';
 import './App.css';
 import './index.css';
@@ -15,7 +15,7 @@ function App() {
   const [bigImage, setBigImage] = useState(slideImg[0].src);
 
   return (
-    <div className=" font-serif ">
+    <div className="">
       <Header navLink={navLinks} />
 
       <main>
