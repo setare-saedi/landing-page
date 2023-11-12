@@ -21,7 +21,7 @@ function Header({ navLink }) {
           {navLink.map(item => <div key={item.id}><a href={item.href}>{item.label}</a></div>)}
         </ul>
 
-        <div className={`${showMenu ? 'fixed top-0 right-0 z-50' : 'hidden'} p-6 h-screen lg:hidden  bg-violet-200     w-full rounded-xl`}>
+        <div className={`${showMenu ? 'fixed top-0 right-0 z-50' : 'hidden'} p-6 min-h-screen lg:hidden  bg-violet-200     w-full rounded-xl`}>
           <div className=' flex flex-col '>
             <div className='  divide-y-2 divide-violet-50'>
               <div  className=' flex justify-between items-center mb-4'>
