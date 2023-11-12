@@ -21,7 +21,7 @@ function Header({ navLink }) {
           {navLink.map(item => <div key={item.id}><a href={item.href}>{item.label}</a></div>)}
         </ul>
 
-        <div className={`${showMenu ? 'flex' : 'hidden'} p-6 h-screen bg-violet-400 absolute top-0 right-0 mx-4 my-2 min-w-[200px] rounded-xl`}>
+        <div className={`${showMenu ? 'fixed' : 'hidden'} p-6 h-screen  bg-violet-200 absolute top-0 right-0   w-full rounded-xl`}>
           <div className=' flex flex-col '>
             <div className='  divide-y-2 divide-violet-200'>
               <div>
@@ -45,6 +45,10 @@ function Header({ navLink }) {
         </a>
       </nav>
     </header>
+
+
+
+
   );
 }
 
