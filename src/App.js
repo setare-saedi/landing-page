@@ -2,11 +2,12 @@ import React from 'react';
 import { useState } from 'react';
 import './App.css';
 import './index.css';
-import { navLinks, statistics, slideImg, products, cards, managers } from './constants';
+import { navLinks, statistics, slideImg, products, cards, managers, skills } from './constants';
 import { ImStarFull } from 'react-icons/im';
 
 import Button from './components/Button';
 import SlideItems from './components/SlideItems';
+import SwiperParallax from './components/SwiperSliders/SwiperParallax/SwiperParallax';
 import Counter from './components/Counter';
 import Header from './sections/Header';
 import Footer from './sections/Footer';
@@ -81,11 +82,15 @@ function App() {
                       {pro.price > 0 ? <p className=' text-2xl text-gray-700'>{pro.price} <span className=' text-lg text-gray-500'>تومان</span></p> : <p className=' text-green-600 font-bold text-2xl'>رایگان ! </p>}
                     </div>
                   </div>
-
-
                 </div>
               ))}
             </div>
+          </div>
+          
+        </section>
+        <section>
+        <div className=' flex relative'>
+            <SwiperParallax  allSkills={skills} />
           </div>
         </section>
         <section>

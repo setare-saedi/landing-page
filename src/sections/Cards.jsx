@@ -1,5 +1,5 @@
 import React from 'react';
-import SwiperCards from './../components/SwiperSliders/SwiperCards';
+import SwiperCards from './../components/SwiperSliders/SwiperCards/SwiperCards';
 
 function Cards({cardInfo}) {
     return (
