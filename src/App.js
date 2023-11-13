@@ -8,7 +8,7 @@ import { ImStarFull } from 'react-icons/im';
 import Button from './components/Button';
 import SlideItems from './components/SlideItems';
 import Counter from './components/Counter';
-
+import SwiperCards from './components/SwiperSliders/SwiperCards';
 import Header from './sections/Header';
 import Footer from './sections/Footer';
 function App() {
@@ -195,6 +195,7 @@ function App() {
             </div>
           </div>
         </section>
+      <SwiperCards allCard={cards} />
       </main>
       <Footer />
     </div>
