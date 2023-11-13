@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import './SwiperCards.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -9,7 +9,7 @@ import { EffectCards } from 'swiper/modules';
 
 function SwiperCards({allCard}) {
     return (
-        <div>
+        <div className=' flex justify-center items-center'>
            <Swiper
         effect={'cards'}
         grabCursor={true}
