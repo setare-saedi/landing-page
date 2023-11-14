@@ -25,17 +25,18 @@ function SwiperSliderPerView({ allSkills }) {
             >
                 {
                     allSkills.map((skill) => (
-                        <SwiperSlide className=' min-h-max  swiper-slide-per-view flex flex-row justify-center items-center p-6 bg-violet-50' key={skill.id}>
-                            <div className=''>
-                                <h3 className=' text-xl font-bold'>{skill.title}</h3>
-                                <div className='  text-sm  mt-2 text-justify '>
+                        <SwiperSlide className='bg-slide  min-h-max   swiper-slide-per-view' key={skill.id}>
+                                <div>
+                                    <h3 className=' text-xl font-bold'>{skill.title}</h3>
+                                </div>
+                                <div className='z-20 leading-loose text-sm  mt-2 text-justify '>
                                     {skill.description.length > 250 ?
                                         <p className=' '>
                                             {skill.description.substring(0, 250)}
                                             {
                                                 !isShowReadMore ?
-                                                    <button className=' text-violet-700 px-2 text-md font-bold ' onClick={() => setIsShowReadMore(!isShowReadMore)}>
-                                                         ادامه مطلب ... 
+                                                    <button className=' text-violet-800 px-2 text-md font-bold ' onClick={() => setIsShowReadMore(!isShowReadMore)}>
+                                                        ادامه مطلب ...
                                                     </button>
                                                     :
                                                     <>{skill.description.substring(250, skill.description.length)}</>
@@ -45,7 +46,6 @@ function SwiperSliderPerView({ allSkills }) {
                                         <p>{skill.description}</p>
                                     }
                                 </div>
-                            </div>
                         </SwiperSlide>
                     ))
                 }
