@@ -34,8 +34,8 @@ function SwiperSliderPerView({ allSkills }) {
                                             {skill.description.substring(0, 250)}
                                             {
                                                 !isShowReadMore ?
-                                                    <button className=' bg-black text-red-700  ' onClick={() => setIsShowReadMore(!isShowReadMore)}>
-                                                        ادامه مطلب ...
+                                                    <button className=' text-violet-700 px-2 text-md font-bold ' onClick={() => setIsShowReadMore(!isShowReadMore)}>
+                                                         ادامه مطلب ... 
                                                     </button>
                                                     :
                                                     <>{skill.description.substring(250, skill.description.length)}</>
