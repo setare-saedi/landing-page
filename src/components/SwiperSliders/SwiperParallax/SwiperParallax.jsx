@@ -35,10 +35,13 @@ function SwiperParallax({ allSkills }) {
                     className="parallax-bg"
                     style={{
                         'backgroundImage':
-                            'url(./../../img/b1.png)',
+                            'url(./../../img/b2.jpg)',
+                            
                     }}
                     data-swiper-parallax="10%"
-                ></div>
+                >
+
+                </div>
                 {
                     allSkills.map((skill) => (
                         <div key={skill.id}>

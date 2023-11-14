@@ -6,8 +6,7 @@
   }
   
   .swiper-slide-parallax {
-    font-size: 18px;
-    color: #fff;
+    color: #000;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 40px 60px;
@@ -22,6 +21,18 @@
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
-    filter: blur(2px);
+    filter: blur(40px);
+  }
+  .swiper-parallax .swiper-pagination-bullet{
 
+    background-color: rgb(99, 6, 99);
+    width: 40px;
+    height: 5px;
+    border-radius: 0%;
+    margin: 25px !important;
+  }
+  .swiper-parallax [class^="swiper-button-"]::after{
+   color: blueviolet;
+   font-size: 20px;
+   font-weight: 900;
   }
