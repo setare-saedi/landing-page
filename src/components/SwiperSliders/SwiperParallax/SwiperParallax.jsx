@@ -41,17 +41,19 @@ function SwiperParallax({ allSkills }) {
                 ></div>
                 {
                     allSkills.map((skill) => (
-                        <>
-                            <SwiperSlide key={skill.id} className='swiper-slide-parallax'>
+                        <div key={skill.id}>
+                            <SwiperSlide className='swiper-slide-parallax' key={skill.id}>
                                 <div className=" text-xl font-bold" data-swiper-parallax="-300" >
                                     {skill.title}
                                 </div>
                                 <div className=" text-lg" data-swiper-parallax="-200">
-                                    <p>{skill.description}</p>
+                                    <p >
+                {skill.description}
+                                    </p>
                                 </div>
 
                             </SwiperSlide>
-                        </>
+                        </div>
                     ))
                 }
 

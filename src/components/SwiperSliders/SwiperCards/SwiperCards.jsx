@@ -25,7 +25,8 @@ function SwiperCards({ allCard }) {
                 </div>
                 <h3 className=' text-xl font-bold'>{card.title}</h3>
                 <p className=' text-sm text-black mt-2'>{card.description}</p>
-              </div></SwiperSlide>
+              </div>
+              </SwiperSlide>
           ))
         }
 

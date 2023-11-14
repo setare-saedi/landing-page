@@ -1,0 +1,34 @@
+
+.swiper-per-view {
+    /* width: 100%;
+    height: 100%; */
+    margin: 20px 0;
+  }
+  
+  /* .swiper-slide-per-view {
+    text-align: center;
+    background: rgb(255, 238, 255);
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  } */
+  
+  /* .swiper-slide-per-view img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+  
+  .swiper-slide-per-view {
+    width: 80%;
+  }
+  
+  /* .swiper-slide-per-view:nth-child(2n) {
+    width: 80%;
+  } */
+/*   
+  .swiper-slide:nth-child(3n) {
+    width: 40%;
+  } */

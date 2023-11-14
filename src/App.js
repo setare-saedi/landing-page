@@ -8,6 +8,7 @@ import { ImStarFull } from 'react-icons/im';
 import Button from './components/Button';
 import SlideItems from './components/SlideItems';
 import SwiperParallax from './components/SwiperSliders/SwiperParallax/SwiperParallax';
+import SwiperSliderPerView from './components/SwiperSliders/SwiperSliderPerView/SwiperSliderPerView';
 import Counter from './components/Counter';
 import Header from './sections/Header';
 import Footer from './sections/Footer';
@@ -91,6 +92,9 @@ function App() {
         <section>
         <div className=' flex relative'>
             <SwiperParallax  allSkills={skills} />
+          </div>
+          <div className=' flex relative'>
+            <SwiperSliderPerView  allSkills={skills} />
           </div>
         </section>
         <section>
