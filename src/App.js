@@ -4,7 +4,7 @@ import './App.css';
 import './index.css';
 import { navLinks, statistics, slideImg, products, cards, managers, skills } from './constants';
 import { ImStarFull } from 'react-icons/im';
-
+import Bg from './components/Bg/Bg';
 import Button from './components/Button';
 import SlideItems from './components/SlideItems';
 import SwiperParallax from './components/SwiperSliders/SwiperParallax/SwiperParallax';
@@ -12,7 +12,7 @@ import SwiperSliderPerView from './components/SwiperSliders/SwiperSliderPerView/
 import Counter from './components/Counter';
 import Header from './sections/Header';
 import Footer from './sections/Footer';
-import Cards from './sections/Cards';
+import Cards from './sections/Card/Cards';
 function App() {
   const [bigImage, setBigImage] = useState(slideImg[0].src);
 
@@ -45,7 +45,7 @@ function App() {
           <div className=' cursor-pointer min-h-full bg-img  bg-violet-50 opacity-80   flex justify-center items-center  relative' >
             <img src={bigImage} className='z-20' alt='laptop' width={610} height={500} />
             <div className=' z-20 flex overflow-hidden absolute -bottom-10 gap-4 justify-center items-center'>
-              { slideImg.map(image => <SlideItems key={image.id} imgUrl={image.src} bigImgUrl={bigImage} changeBigImg={(e) => (setBigImage(e))} />)
+              {slideImg.map(image => <SlideItems key={image.id} imgUrl={image.src} bigImgUrl={bigImage} changeBigImg={(e) => (setBigImage(e))} />)
               }
             </div>
           </div>
@@ -87,16 +87,17 @@ function App() {
               ))}
             </div>
           </div>
-          
+
         </section>
         <section>
-        <div className=' flex relative'>
-            <SwiperParallax  allSkills={skills} />
+          <div className=' flex relative'>
+            <SwiperParallax allSkills={skills} />
           </div>
           <div className=' flex relative'>
-            <SwiperSliderPerView  allSkills={skills} />
+            <SwiperSliderPerView allSkills={skills} />
           </div>
         </section>
+
         <section>
           <div className='my-32 flex flex-col xl:flex-row gap-16 px-12 mx-4   '>
             <div className=' xl:w-2/5 text-center xl:text-right flex flex-col'>
@@ -122,7 +123,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section>
+        <section className=' relative overflow-hidden'>
           <Cards cardInfo={cards} />
         </section>
         <section>
@@ -152,7 +153,8 @@ function App() {
           </div>
         </section>
         <section>
-          <div className=' flex flex-col justify-center items-center my-4 p-6 bg-violet-50'>
+
+          <div className=' flex flex-col justify-center items-center my-4 p-6 bg-violet-50 relative'>
             <div>
               <h2 className=' text-center text-4xl  '>
                 لورم
@@ -170,6 +172,7 @@ function App() {
                 <p className=' text-xl text-gray-700 my-4'>{man.bio}</p>
               </div>)}
             </div>
+            
           </div>
         </section>
         <section>

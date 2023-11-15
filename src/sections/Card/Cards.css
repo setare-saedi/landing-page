@@ -1,0 +1,12 @@
+.card{
+    box-shadow: 0px 0px 30px #00000045;
+}
+.card-bottom-line{
+    content: '';
+    width: 25%;
+    height: 5px;
+    position: absolute;
+    bottom: 7%;
+    left: 7%;
+    background-color: rgb(190, 129, 255);
+}

@@ -9,22 +9,26 @@ import { EffectCards } from 'swiper/modules';
 
 function SwiperCards({ allCard }) {
   return (
-    <div className=' flex justify-center items-center'>
+    <div className=' p-6'>
       <Swiper
         effect={'cards'}
         grabCursor={true}
         modules={[EffectCards]}
-        className="mySwiper swiper-card"
+        className=" w-[80%] min-h-max"
       >
         {
           allCard.map((card) => (
-            <SwiperSlide className='swiper-slide-card' key={card.id}>
-              <div  className='p-6 text-center flex flex-col items-center space-y-2 overflow-hidden'>
+            <SwiperSlide className='swiper-slide-card rounded-lg p-3 flex flex-wrap flex-col items-stretch justify-center ' key={card.id}>
+              <div className='flex justify-between '>
+                <p className=' text-sm font-bold text-gray-500'>{card.subTitle}</p>
+                <p className=' font-bold text-sm text-violet-600'>{card.logo}</p>
+              </div>
+              <div  className='p-6 text-center flex justify-center flex-col items-center space-y-2 overflow-hidden'>
                 <div className=' flex justify-center items-center w-11 h-11 bg-violet-200  rounded-full'>
                   <img src={card.iconUrl} alt={card.title} width={24} height={24} />
                 </div>
                 <h3 className=' text-xl font-bold'>{card.title}</h3>
-                <p className=' text-sm text-black mt-2'>{card.description}</p>
+                <div className=' flex-1 text-sm  mt-2'>{card.description}</div>
               </div>
               </SwiperSlide>
           ))
