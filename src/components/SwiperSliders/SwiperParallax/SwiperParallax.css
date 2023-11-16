@@ -9,7 +9,12 @@
     color: #fff;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 40px 60px;
+    padding: 80px 60px;
+    height: unset;
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
   .parallax-bg {

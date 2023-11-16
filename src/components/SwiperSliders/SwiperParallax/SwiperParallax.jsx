@@ -36,7 +36,7 @@ function SwiperParallax({ allSkills }) {
                     style={{
                         'backgroundImage':
                             'url(./../../img/bg-pa.jpg)',
-                            
+
                     }}
                     data-swiper-parallax="10%"
                 >
@@ -45,13 +45,13 @@ function SwiperParallax({ allSkills }) {
                 {
                     allSkills.map((skill) => (
                         <div key={skill.id}>
-                            <SwiperSlide className='swiper-slide-parallax' key={skill.id}>
-                                <div className=" text-xl font-bold" data-swiper-parallax="-300" >
+                            <SwiperSlide className='swiper-slide-parallax space-y-3 ' key={skill.id}>
+                                <div className=" text-2xl font-bold" data-swiper-parallax="-300" >
                                     {skill.title}
                                 </div>
-                                <div className=" text-lg" data-swiper-parallax="-200">
+                                <div className=" text-lg leading-loose text-justify" data-swiper-parallax="-200">
                                     <p >
-                {skill.description}
+                                        {skill.description}
                                     </p>
                                 </div>
 
