@@ -1,9 +1,9 @@
 import React from 'react';
-import './SwiperCards.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 
+import './SwiperCards.css';
 import { EffectCards } from 'swiper/modules';
 
 

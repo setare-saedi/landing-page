@@ -16,7 +16,7 @@
 } */
 .swiper-slide{
   height: unset;
-  min-height: max-content !important;
+  min-height: max-content;
 }
 .swiper-slide-card:nth-child(odd) {
   background-color: rgb(234, 214, 254);
