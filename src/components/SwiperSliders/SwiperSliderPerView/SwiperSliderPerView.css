@@ -24,15 +24,15 @@
 
 @media (min-width: 768px) {
   .swiper-slide-per-view {
-    width: 40%;
+    width: 50%;
   }
 
   .swiper-slide-per-view:nth-child(2n) {
-    width: 35%;
+    width: 40%;
   }
 
   .swiper-slide:nth-child(3n) {
-    width: 25%;
+    width: 40%;
   }
 }
 

@@ -35,7 +35,7 @@ function SwiperParallax({ allSkills }) {
                     className="parallax-bg"
                     style={{
                         'backgroundImage':
-                            'url(./../../img/b2.jpg)',
+                            'url(./../../img/bg-pa.jpg)',
                             
                     }}
                     data-swiper-parallax="10%"
