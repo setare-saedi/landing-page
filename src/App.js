@@ -9,6 +9,7 @@ import Button from './components/Button';
 import SlideItems from './components/SlideItems';
 import SwiperParallax from './components/SwiperSliders/SwiperParallax/SwiperParallax';
 import SwiperSliderPerView from './components/SwiperSliders/SwiperSliderPerView/SwiperSliderPerView';
+import SwiperVertical from './components/SwiperSliders/SwiperVertical/SwiperVertical';
 import Counter from './components/Counter';
 import Header from './sections/Header';
 import Footer from './sections/Footer';
@@ -51,8 +52,11 @@ function App() {
           </div>
 
         </section>
-        <section className=' mt-16 mx-16'>
-          <div className=' flex flex-col justify-start gap-5'>
+        <section className=' overflow-hidden  relative mt-16 my-20 lg:mx-16 mx-1 flex lg:flex-row flex-col justify-between items-center gap-6'>
+          <div className='h-[500px]  relative lg:w-3/5 xl:w-2/4 '>
+            <SwiperVertical info={cards} />
+          </div>
+          <div className=' flex  flex-col justify-start gap-5 lg:w-2/5 xl:w-2/4 '>
             <h2 className=' text-4xl font-bold text-center lg:text-right '>
               لورم
               <span className='text-pink-600' > ایپسوم </span>
@@ -61,7 +65,7 @@ function App() {
             <p className=' text-xl text-gray-600 lg:max-w-lg text-center lg:text-right'>
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
             </p>
-            <div className='mt-16 grid grid-cols-1 gap-14 sm:gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
+            {/* <div className='mt-16 grid grid-cols-1 gap-14 sm:gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
               {products.map((pro) => (
                 <div key={pro.id} className='flex flex-col ' >
                   <div className=' wave overflow-hidden relative border-2 border-violet-100 rounded-md justify-center items-center bg-violet-100 flex flex-col flex-1 '>
@@ -85,7 +89,7 @@ function App() {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
 
         </section>
@@ -97,7 +101,6 @@ function App() {
             <SwiperSliderPerView allSkills={skills} />
           </div>
         </section>
-
         <section>
           <div className='my-32 flex flex-col xl:flex-row gap-16 px-12 mx-4   '>
             <div className=' xl:w-2/5 text-center xl:text-right flex flex-col'>
@@ -172,7 +175,7 @@ function App() {
                 <p className=' text-xl text-gray-700 my-4'>{man.bio}</p>
               </div>)}
             </div>
-            
+
           </div>
         </section>
         <section>

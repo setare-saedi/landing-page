@@ -1,0 +1,56 @@
+.swiper-vertical {
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+}
+.swiper-slide-vertical {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-vertical > .swiper-pagination-bullets, .swiper-pagination-vertical.swiper-pagination-bullets{
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  direction: ltr;
+}
+.vertical-card{
+  background: #fff;
+  box-shadow: 5px 5px 15px 15px rgb(241, 241, 241);
+
+}
+.swiper-vertical .swiper-pagination-bullet{
+  background-color: blueviolet;
+  width: 15px;
+  height: 15px;
+}
+.vertical-bg-strip{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top:-1%;
+  right: -3%;
+  background-image: linear-gradient(-45deg, #c084fc 25%, transparent 25%, transparent 50%, #c084fc 50%, #c084fc 75%, transparent 75%, #fff);
+  background-size: 25px 25px;
+  z-index: -10;
+}
+.vertical-bg-dots{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -5%;
+  left: -1%;
+  background-image: radial-gradient(circle at 1px 1px, #c084fc 1.5px, transparent 0);
+  background-size: 10px 10px;
+  z-index: -1;
+}
+.num{
+ position: absolute;
+ bottom: -30px;
+ z-index: 500;
+}

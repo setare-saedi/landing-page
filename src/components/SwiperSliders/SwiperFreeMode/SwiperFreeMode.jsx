@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -10,65 +10,47 @@ import 'swiper/css/pagination';
 import './SwiperFreeMode.css';
 
 // import required modules
-import { FreeMode, Pagination } from 'swiper/modules';
+import {  Autoplay, FreeMode, Pagination } from 'swiper/modules';
 
 function SwiperFreeMode({ allInfo }) {
-
-    const [windowSize, setWindowSize] = useState({
-        width: undefined,
-        height: undefined,
-    });
-    useEffect(() => {
-        if (typeof window === 'undefined') return; //specific for gatsby or applications using webpack
-
-        const handleResize = () => {
-            setWindowSize({
-                width: window.innerWidth,
-                height: window.innerHeight,
-            });
-        }
-        window.addEventListener("resize", handleResize);
-
-        handleResize();
-
-        return () => window.removeEventListener("resize", handleResize);
-    }, [])
-
-    const [numItems, setNumItems] = useState(3)
-    useEffect(() => {
-        const width = windowSize.width;
-
-        if (width >= 1200) {
-            if (numItems !== 3) {
-                setNumItems(3);
-            }
-        } else if (width > 900) {
-            if (numItems !== 2) {
-                setNumItems(2);
-            }
-        } else {
-            if (numItems !== 1) {
-                setNumItems(1);
-            }
-        }
-    }, [windowSize])
 
     return (
         <>
             <Swiper
-                slidesPerView={numItems}
+                // slidesPerView={numItems}
                 spaceBetween={40}
                 freeMode={true}
                 pagination={{
                     clickable: true,
                 }}
-                modules={[FreeMode, Pagination]}
+                modules={[ Autoplay, FreeMode, Pagination]}
                 className="SwiperFreeMode"
+                autoplay={{
+                    delay: 4000,
+                    disableOnInteraction: false,
+                  }}
+                slidesPerView={1}
+                lazy="true"
+                breakpoints={{
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    900: {
+                        slidesPerView: 2,
+                        spaceBetween: 40,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 50,
+                    },
+                }}
+                // modules={[Pagination]}
             >
                 <div className=' md:grid md:gap-8  md:grid-cols-2 xl:grid-cols-3 xl:gap-8 mx-16'>
                     {
                         allInfo.map((card) => (
-                            <SwiperSlide className=' swiper-slide card relative space-y-6 px-6 py-6' key={card.id}>
+                            <SwiperSlide className=' swiper-slide-free card relative space-y-6 px-6 py-6' key={card.id}>
                                 <div className=' flex justify-between items-start'>
                                     <p className=' text-gray-400 text-lg font-bold'>{card.subTitle}</p>
                                     <p className=' text-violet-800 font-bold text-lg'>{card.logo}</p>
