@@ -106,3 +106,12 @@ a:hover {
   left: -12px;
   transform: rotate(-45deg);
 }
+.man-bottom-line{
+  content: '';
+  width: 25%;
+  height: 5px;
+  position: absolute;
+  bottom: 7%;
+  left: 0%;
+  background-color: rgb(190, 129, 255);
+}

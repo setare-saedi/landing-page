@@ -52,7 +52,7 @@ function App() {
           </div>
 
         </section>
-        <section className=' overflow-hidden  relative mt-16 my-20 lg:mx-16 mx-1 flex lg:flex-row flex-col justify-between items-center gap-6'>
+        <section className=' max-lg:overflow-hidden  relative mt-16 my-20 lg:mx-16 mx-1 flex lg:flex-row flex-col justify-between items-center gap-6'>
           <div className='h-[500px]  relative lg:w-3/5 xl:w-2/4 '>
             <SwiperVertical info={cards} />
           </div>
@@ -62,6 +62,9 @@ function App() {
               <span className='text-pink-600' > ایپسوم </span>
               فارسی ...
             </h2>
+            <p className=' text-xl text-gray-600 lg:max-w-lg text-center lg:text-right'>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+            </p>
             <p className=' text-xl text-gray-600 lg:max-w-lg text-center lg:text-right'>
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
             </p>
@@ -155,10 +158,11 @@ function App() {
             </div>
           </div>
         </section>
+
         <section>
 
-          <div className=' flex flex-col justify-center items-center my-4 p-6 bg-violet-50 relative'>
-            <div>
+          <div className=' flex xl:flex-row flex-col my-4 p-6 bg-violet-50 relative gap-5'>
+            <div  className=' flex flex-col items-center justify-center '>
               <h2 className=' text-center text-4xl  '>
                 لورم
                 <span className=' text-rose-700' > ایپسوم </span>
@@ -168,16 +172,31 @@ function App() {
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
               </p>
             </div>
-            <div className='flex flex-col md:flex-row flex-1 gap-10 justify-evenly items-center '>
-              {managers.map(man => <div key={man.id} className='flex flex-col justify-center items-center max-w-xl text-center'>
-                <img src={man.imgUrl} alt={man.name} className='  w-16 h-16 border-2  border-violet-200 rounded-full ' />
-                <p className=' text-3xl mt-4'>{man.name}</p>
-                <p className=' text-xl text-gray-700 my-4'>{man.bio}</p>
-              </div>)}
+            <div className=' flex lg:flex-row flex-col gap-2 justify-evenly items-center '>
+              {managers.map(man =>
+                <div key={man.id} className='h-full flex flex-col flex-1 relative bg-white text-center shadow-md'>
+                  <div className=' flex justify-between items-center p-8'>
+                    <p className=' text-violet-600 text-3xl font-bold'>+</p>
+                    <p className=' text-violet-300 font-bold text-lg'>{man.expertise}</p>
+                  </div>
+                  <div className='flex gap-9  flex-1 justify-center items-center flex-col'>
+                    <div className='  flex justify-center items-center w-28 h-28 border-2 border-violet-50  rounded-full'>
+                      <img src={man.imgUrl} alt={man.name} className=' w-20 h-20 ' />
+                    </div>
+                    <div>
+                      <h3 className=' text-2xl font-bold'>{man.name}</h3>
+                    </div>
+                    <div className=' text-center px-3'>
+                      <p className=' text-gray-500 text-md pb-16 mb-3 leading-7'>{man.bio}</p>
+                    </div>
+                  </div>
+                  <div className='man-bottom-line'></div>
+                </div>)}
             </div>
-
           </div>
         </section>
+
+
         <section>
           <div className=' flex flex-col flex-1  lg:flex-row  justify-between items-center my-12 mx-12'>
             <div className=' lg:w-2/4'>
