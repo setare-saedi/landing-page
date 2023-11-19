@@ -14,6 +14,7 @@ import Counter from './components/Counter';
 import Header from './sections/Header';
 import Footer from './sections/Footer';
 import Cards from './sections/Card/Cards';
+import ContactUs from './sections/ContactUs/ContactUs';
 function App() {
   const [bigImage, setBigImage] = useState(slideImg[0].src);
 
@@ -198,7 +199,10 @@ function App() {
 
 
         <section>
-          <div className=' flex flex-col flex-1  lg:flex-row  justify-between items-center my-12 mx-12'>
+          <div className=' relative'>
+            <ContactUs />
+          </div>
+          {/* <div className=' flex flex-col flex-1  lg:flex-row  justify-between items-center my-12 mx-12'>
             <div className=' lg:w-2/4'>
               <h3 className=' text-3xl text-center ' >
                 برای دریافت آخرین اخبار و تخفیفات ویژه <span className=' text-rose-500'> ایمیل </span> خود را وارد کنید
@@ -217,7 +221,7 @@ function App() {
             <div>
 
             </div>
-          </div>
+          </div> */}
         </section>
       </main>
       <Footer />

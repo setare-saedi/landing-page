@@ -6,8 +6,8 @@ import { PiInstagramLogoFill } from 'react-icons/pi';
 function Footer() {
     return (
         <footer>
-        <div className=' flex flex-col   bg-black px-12 py-10'>
-          <div className=' flex lg:flex-row flex-col gap-4 items-center justify-between'>
+        <div className=' flex flex-col   bg-black px-12 py-4'>
+          {/* <div className=' flex lg:flex-row flex-col gap-4 items-center justify-between'>
             <div className=' flex gap-4 '>
              <a href='#'>
                <ImFacebook className='  hover:bg-violet-200 bg-white p-2 w-12 h-12 rounded-full' />
@@ -55,11 +55,11 @@ function Footer() {
               <p>شماره تماس: 09120000000</p>
             </div>
           </div>
-          <div className=''></div>
+          <div className=''></div> */}
           <div className=' text-white text-center'>
             <div>کپی رایت</div>
           </div>
-        </div>
+        {/* </div> */}
           </div>
       </footer>
     );
