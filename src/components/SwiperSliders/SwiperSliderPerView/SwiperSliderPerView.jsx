@@ -9,7 +9,7 @@ import './SwiperSliderPerView.css';
 
 // import required modules
 // import { Pagination } from 'swiper/modules';
-
+ import ProgressBar1 from '../../ProgressBar/ProgressBar';
 function SwiperSliderPerView({ allSkills }) {
     const [isShowReadMore, setIsShowReadMore] = useState(false);
     return (
@@ -45,6 +45,9 @@ function SwiperSliderPerView({ allSkills }) {
                                         :
                                         <p>{skill.description}</p>
                                     }
+                                </div>
+                                <div className=' w-2/4 my-4 mx-auto z-10'>
+                                <ProgressBar1 com={skill.level}/>
                                 </div>
                         </SwiperSlide>
                     ))

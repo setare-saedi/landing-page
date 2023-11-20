@@ -7,6 +7,7 @@ import { ImStarFull } from 'react-icons/im';
 import Bg from './components/Bg/Bg';
 import Button from './components/Button';
 import SlideItems from './components/SlideItems';
+import ProgressBar1 from './components/ProgressBar/ProgressBar';
 import SwiperParallax from './components/SwiperSliders/SwiperParallax/SwiperParallax';
 import SwiperSliderPerView from './components/SwiperSliders/SwiperSliderPerView/SwiperSliderPerView';
 import SwiperVertical from './components/SwiperSliders/SwiperVertical/SwiperVertical';
@@ -15,6 +16,12 @@ import Header from './sections/Header';
 import Footer from './sections/Footer';
 import Cards from './sections/Card/Cards';
 import ContactUs from './sections/ContactUs/ContactUs';
+
+import { ImFacebook } from 'react-icons/im';
+import { FaTwitter } from 'react-icons/fa';
+import { PiInstagramLogoFill } from 'react-icons/pi';
+import { PiLinkedinLogoBold } from "react-icons/pi";
+
 function App() {
   const [bigImage, setBigImage] = useState(slideImg[0].src);
 
@@ -163,7 +170,7 @@ function App() {
         <section>
 
           <div className=' flex xl:flex-row flex-col my-4 p-6 bg-violet-50 relative gap-5'>
-            <div  className=' flex flex-col items-center justify-center '>
+            <div className=' flex flex-col items-center justify-center '>
               <h2 className=' text-center text-4xl  '>
                 لورم
                 <span className=' text-rose-700' > ایپسوم </span>
@@ -188,9 +195,33 @@ function App() {
                       <h3 className=' text-2xl font-bold'>{man.name}</h3>
                     </div>
                     <div className=' text-center px-3'>
-                      <p className=' text-gray-500 text-md pb-16 mb-3 leading-7'>{man.bio}</p>
+                      <p className=' text-gray-500 text-md pb-6  leading-7'>{man.bio}</p>
                     </div>
                   </div>
+                  <div className=' relative  flex flex-row justify-center pb-16 gap-10 mb-6'>
+                    <div className=' relative'>
+                      <a href='#' className=' '>
+                        <ImFacebook className=' absolute  hover:bg-violet-200 hover:text-violet-800 hover:w-9 hover:h-9 bg-violet-100 text-violet-900 p-1 w-8 h-8 ' />
+                      </a>
+                    </div>
+                    <div className=' relative'>
+                      <a href='#' className=' '>
+                        <FaTwitter className='absolute hover:bg-violet-200 hover:text-violet-800  hover:w-9 hover:h-9 bg-violet-100 text-violet-900  p-1 w-8 h-8 ' />
+                      </a>
+                    </div>
+                    <div className=' '>
+                      <a href='#' className=' relative'>
+                        <PiInstagramLogoFill className='absolute hover:bg-violet-200 hover:text-violet-800 hover:w-9 hover:h-9 bg-violet-100 text-violet-900 p-1 w-8 h-8 ' />
+                      </a>
+                    </div>
+                    <div className=' relative'>
+                      <a href='#' className='' className=' '>
+                        <PiLinkedinLogoBold className='absolute hover:bg-violet-200 hover:text-violet-800 hover:w-9 hover:h-9 bg-violet-100 text-violet-900 p-1 w-8 h-8 ' />
+                      </a>
+                    </div>
+
+                  </div>
+
                   <div className='man-bottom-line'></div>
                 </div>)}
             </div>
@@ -225,6 +256,7 @@ function App() {
         </section>
       </main>
       <Footer />
+
     </div>
   );
 }

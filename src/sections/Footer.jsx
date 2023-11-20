@@ -6,7 +6,7 @@ import { PiInstagramLogoFill } from 'react-icons/pi';
 function Footer() {
     return (
         <footer>
-        <div className=' flex flex-col   bg-black px-12 py-4'>
+        <div className=' flex flex-col   bg-gray-600 px-12 py-4'>
           {/* <div className=' flex lg:flex-row flex-col gap-4 items-center justify-between'>
             <div className=' flex gap-4 '>
              <a href='#'>
