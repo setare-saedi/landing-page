@@ -46,11 +46,11 @@ function SwiperParallax({ allSkills }) {
                     allSkills.map((skill) => (
                         <div key={skill.id}>
                             <SwiperSlide className='swiper-slide-parallax space-y-3 ' key={skill.id}>
-                                <div className=" text-2xl font-bold" data-swiper-parallax="-300" >
+                                <div className=" text-3xl text-violet-300 uppercase font-bold" data-swiper-parallax="-300" >
                                     {skill.title}
                                 </div>
-                                <div className=" text-lg leading-loose text-justify" data-swiper-parallax="-200">
-                                    <p >
+                                <div className=" text-lg leading-loose text-justify max-md:leading-loose max-md:text-sm" data-swiper-parallax="-200">
+                                    <p className=' md:w-[70%]'>
                                         {skill.description}
                                     </p>
                                 </div>

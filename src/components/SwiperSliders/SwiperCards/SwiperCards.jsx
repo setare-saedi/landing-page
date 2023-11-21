@@ -18,7 +18,7 @@ function SwiperCards({ allCard }) {
       >
         {
           allCard.map((card) => (
-            <SwiperSlide className='swiper-card rounded-lg p-3 flex flex-wrap flex-col items-stretch justify-center ' key={card.id}>
+            <SwiperSlide className='swiper-card bg-violet-300 rounded-lg p-3 flex flex-wrap flex-col items-stretch justify-center ' key={card.id}>
               <div className='flex justify-between '>
                 <p className=' text-sm font-bold text-gray-500'>{card.subTitle}</p>
                 <p className=' font-bold text-sm text-violet-600'>{card.logo}</p>
