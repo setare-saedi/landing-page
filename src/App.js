@@ -43,10 +43,10 @@ function App() {
             <div className=' '>
               <Button label=' کلیک کنید' class1='btn' />
             </div>
-            <div className=' flex justify-between text-center gap-10 my-4 py-4'>
+            <div className=' flex justify-between text-center gap-10 max-sm:gap-2 max-sm:justify-evenly my-4 py-4'>
               {statistics.map((stat) => (<div key={stat.id}>
-                <p className=' text-2xl text-gray-600'>{stat.label}</p>
-                <p className=' text-4xl my-5'><Counter count={stat.value} /></p>
+                <p className=' text-2xl text-gray-600 max-sm:text-sm max-sm:font-bold'>{stat.label}</p>
+                <p className=' text-4xl my-5 text-violet-900 font-bold max-sm:text-sm '><Counter count={stat.value} /></p>
               </div>))}
             </div>
           </div>
