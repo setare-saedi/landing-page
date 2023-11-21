@@ -42,8 +42,8 @@ function Header({ navLink }) {
         </div>
 
         <a href="#" className='flex items-center cursor-pointer'>
-          <span>Setare</span>
-          <img src='./logo/star.png' width={40} height={40} alt='logo' />
+          <span className=' font-bold text-violet-900'>Setare</span>
+          <img src='./logo/star.png'  width={40} height={40} alt='logo' />
         </a>
       </nav>
     </header>

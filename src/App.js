@@ -130,13 +130,16 @@ function App() {
                 <Button label='لورم ایپسوم ' class1='btn-outline' />
               </div>
             </div>
-            <div className='  xl:w-3/5 overflow-hidden flex justify-center relative  '>
+            <div className='  xl:w-3/5  flex justify-center  relative '>
               <div className=' baner-img overflow-hidden'>
               </div>
-              <img src='./img/6p.png' className=' overflow-hidden z-40 relative' width='710px' height='500px' alt='baner' />
+              <div className=''>
+              <img src='./img/6p.png' className=' transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700 absolute top-0 right-10 z-40 ' width='710px' height='500px' alt='baner' />
+              </div>
             </div>
           </div>
         </section>
+        
         <section className=' relative overflow-hidden'>
           <Cards cardInfo={cards} />
         </section>
@@ -155,13 +158,13 @@ function App() {
             </div>
             <div className='flex flex-col relative my-4 xl:w-2/4'>
               <div className=' w-full flex xl:justify-end justify-center'>
-                <img src='./img/4.jpg' alt='laptop' width='616px' height='150px' className=' bg-violet-200 rounded-md' />
+                <img src='./img/4.jpg' alt='laptop' width='616px' height='150px' className=' bg-violet-200 rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700' />
               </div>
               <div className=' hidden sm:flex flex-row flex-1  items-center xl:justify-end justify-center gap-4 my-4'>
-                <img src='./img/2.jpeg' alt='laptop' width='300px' height='100px' className=' bg-violet-200 rounded-md' />
-                <img src='./img/2.jpeg' alt='laptop' width='300px' height='100px' className=' bg-violet-200 rounded-md' />
+                <img src='./img/2.jpeg' alt='laptop' width='300px' height='100px' className=' bg-violet-200 rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700' />
+                <img src='./img/2.jpeg' alt='laptop' width='300px' height='100px' className=' bg-violet-200 rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700' />
               </div>
-              <div className=' offer'>
+              <div className=' offer '>
               </div>
             </div>
           </div>
@@ -201,22 +204,22 @@ function App() {
                   <div className=' relative  flex flex-row justify-center pb-16 gap-10 mb-6'>
                     <div className=' relative'>
                       <a href='#' className=' '>
-                        <ImFacebook className=' absolute  hover:bg-violet-200 hover:text-violet-800 hover:w-9 hover:h-9 bg-violet-100 text-violet-900 p-1 w-8 h-8 ' />
+                        <ImFacebook className='absolute hover:bg-violet-900 hover:text-violet-50 hover:rounded-sm transition ease-in delay-150 hover:-translate-y-1 hover:scale-105 duration-700 bg-violet-100 text-violet-900 p-1 w-8 h-8 ' />
                       </a>
                     </div>
                     <div className=' relative'>
                       <a href='#' className=' '>
-                        <FaTwitter className='absolute hover:bg-violet-200 hover:text-violet-800  hover:w-9 hover:h-9 bg-violet-100 text-violet-900  p-1 w-8 h-8 ' />
+                        <FaTwitter className='absolute hover:bg-violet-900 hover:text-violet-50 hover:rounded-sm transition ease-in delay-150 hover:-translate-y-1 hover:scale-105 duration-700 bg-violet-100 text-violet-900 p-1 w-8 h-8 ' />
                       </a>
                     </div>
-                    <div className=' '>
-                      <a href='#' className=' relative'>
-                        <PiInstagramLogoFill className='absolute hover:bg-violet-200 hover:text-violet-800 hover:w-9 hover:h-9 bg-violet-100 text-violet-900 p-1 w-8 h-8 ' />
+                    <div className='relative '>
+                      <a href='#' className=' '>
+                        <PiInstagramLogoFill className='absolute hover:bg-violet-900 hover:text-violet-50 hover:rounded-sm transition ease-in delay-150 hover:-translate-y-1 hover:scale-105 duration-700 bg-violet-100 text-violet-900 p-1 w-8 h-8 ' />
                       </a>
                     </div>
                     <div className=' relative'>
-                      <a href='#' className='' className=' '>
-                        <PiLinkedinLogoBold className='absolute hover:bg-violet-200 hover:text-violet-800 hover:w-9 hover:h-9 bg-violet-100 text-violet-900 p-1 w-8 h-8 ' />
+                      <a href='#' className=' '>
+                        <PiLinkedinLogoBold className=' absolute hover:bg-violet-900 hover:text-violet-50 hover:rounded-sm transition ease-in delay-150 hover:-translate-y-1 hover:scale-105 duration-700 bg-violet-100 text-violet-900 p-1 w-8 h-8 ' />
                       </a>
                     </div>
 

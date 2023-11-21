@@ -27,17 +27,16 @@ function ContactUs() {
                     <h2 className=' text-lg font-bold'>ما را در شبکه های اجتماعی دنبال کنید.</h2>
                     <div className=' flex justify-center gap-3 my-6'>
                         <a href='#'>
-                            <ImFacebook className='  hover:bg-violet-200 hover:text-violet-800 bg-violet-700 text-white p-2 w-12 h-12 rounded-full' />
+                            <ImFacebook className='transition duration-700 ease-in-out  hover:bg-violet-200 hover:text-violet-800 bg-violet-800 text-white p-2 w-12 h-12 rounded-full' />
                         </a>
                         <a href='#'>
-                            <FaTwitter className=' hover:bg-violet-200 hover:text-violet-800 bg-violet-700 text-white  p-2 w-12 h-12 rounded-full' />
+                            <FaTwitter className='transition duration-700 ease-in-out hover:bg-violet-200 hover:text-violet-800 bg-violet-800 text-white  p-2 w-12 h-12 rounded-full' />
                         </a>
                         <a href='#'>
-                            <PiInstagramLogoFill className=' hover:bg-violet-200 hover:text-violet-800 bg-violet-700 text-white p-2 w-12 h-12 rounded-full' />
+                            <PiInstagramLogoFill className='transition duration-700 ease-in-out hover:bg-violet-200 hover:text-violet-800 bg-violet-800 text-white p-2 w-12 h-12 rounded-full' />
                         </a>
                         <a href='#' className=''>
-                        <PiLinkedinLogoBold className=' hover:bg-violet-200 hover:text-violet-800 bg-violet-700 text-white p-2 w-12 h-12 rounded-full' />
-                            {/* <FaLinkedinIn className=' hover:bg-violet-200 hover:text-violet-800 bg-violet-700 text-white p-4 w-12 h-12 rounded-full' /> */}
+                        <PiLinkedinLogoBold className='transition duration-700 ease-in-out hover:bg-violet-200 hover:text-violet-800 bg-violet-800 text-white p-2 w-12 h-12 rounded-full' />
                         </a>
 
                     </div>
@@ -47,7 +46,7 @@ function ContactUs() {
                 <p className=' max-sm:hidden'>
                     <Bg />
                 </p>
-                <div className='  border-2 shadow-lg  my-10 px-8 py-10 bg-white lg:w-[90%] mx-auto '>
+                <div className='  border-2 shadow-lg shadow-violet-200  my-10 px-8 py-10 bg-white lg:w-[90%] mx-auto '>
 
                     <form >
                         <div className=' text-center mb-10 px-6'>
@@ -58,27 +57,27 @@ function ContactUs() {
                             <div className=' flex flex-col max-md:space-y-10 md:flex-row md:gap-3 '>
                                 <div className='flex flex-col w-full'>
                                     <label className='text-md font-bold'>نام :</label>
-                                    <input type='text' className=' border-2 rounded-md shadow-md px-2 py-1' placeholder='نام ' />
+                                    <input type='text' className=' caret-violet-500 focus:outline-violet-500 border-2 rounded-md shadow-md shadow-violet-200 px-2 py-1' placeholder='نام ' />
                                 </div>
                                 <div className='flex flex-col w-full'>
                                     <label className='text-md font-bold'>ایمیل:</label>
-                                    <input type='email' className=' border-2 rounded-md shadow-md px-2 py-1 text-left' placeholder='email' />
+                                    <input type='email' className='caret-violet-500 focus:outline-violet-500 border-2 rounded-md shadow-md shadow-violet-200 px-2 py-1 text-left' placeholder='email' />
                                 </div>
                             </div>
                             <div className=' flex flex-col max-md:space-y-10 md:flex-row gap-3'>
                                 <div className='flex flex-col w-full'>
                                     <label className='text-md font-bold'>نام شرکت :</label>
-                                    <input type='text' className=' border-2 rounded-md shadow-md px-2 py-1' placeholder='نام شرکت' />
+                                    <input type='text' className='caret-violet-500 focus:outline-violet-500 border-2 rounded-md shadow-md shadow-violet-200 px-2 py-1' placeholder='نام شرکت' />
                                 </div>
                                 <div className='flex flex-col w-full'>
                                     <label className='text-md font-bold'>شماره تماس :</label>
-                                    <input type='text' className=' border-2 rounded-md shadow-md px-2 py-1' placeholder='شماره تماس ' />
+                                    <input type='text' className='caret-violet-500 focus:outline-violet-500 border-2 rounded-md shadow-md shadow-violet-200 px-2 py-1' placeholder='شماره تماس ' />
                                 </div>
                             </div>
                             <div>
                                 <div className=' flex flex-col'>
                                     <label className='text-md font-bold'>متن درخواست:</label>
-                                    <textarea className='w-full border-2 shadow-md rounded-md px-2 py-2' rows={4} placeholder='پیام'></textarea>
+                                    <textarea className='caret-violet-500 focus:outline-violet-500 w-full border-2 shadow-md shadow-violet-200 rounded-md px-2 py-2' rows={4} placeholder='پیام'></textarea>
                                 </div>
                             </div>
                         </div>

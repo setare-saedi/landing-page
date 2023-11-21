@@ -14,7 +14,7 @@ body {
 
 
 a:hover {
-  color: blueviolet;
+  @apply transition duration-500 ease-in-out text-violet-700;
 }
 
 @layer base {
@@ -93,11 +93,12 @@ a:hover {
 }
 
 .btn{
-  @apply  bg-violet-500
+  @apply hover:transition hover:duration-500 hover:ease-in-out
+   bg-violet-500
   text-white rounded-full px-8 py-2  border-2 border-violet-400 hover:bg-violet-700 shadow-2xl shadow-violet-200;
 }
 .btn-outline{
-  @apply border-2 rounded-full border-violet-400 px-8 py-2  hover:bg-violet-200 hover:border-violet-100 shadow-2xl shadow-violet-200 ;
+  @apply hover:transition hover:duration-500 hover:ease-in-out border-2 rounded-full border-violet-400 px-8 py-2  hover:bg-violet-200 hover:border-violet-100 shadow-2xl shadow-violet-200 ;
 }
 .offer::before{
   content: url(./../public/img/offer.png);
