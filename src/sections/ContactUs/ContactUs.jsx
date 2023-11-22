@@ -51,7 +51,7 @@ function ContactUs() {
                     <form >
                         <div className=' text-center mb-10 px-6'>
                             <h2 className=' font-bold text-xl mb-4'>فرم تماس با ما</h2>
-                            <p className=' text-md text-gray-600'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                            <p className='max-sm:text-justify text-md text-gray-600'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
                         </div>
                         <div className=' space-y-10 '>
                             <div className=' flex flex-col max-md:space-y-10 md:flex-row md:gap-3 '>

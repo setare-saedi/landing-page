@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="">
-      <ScrollToTop component={<MdKeyboardDoubleArrowUp />} className=' text-white text-2xl' color='blueViolet' top={1000} smooth />
+      <ScrollToTop component={<MdKeyboardDoubleArrowUp />} className=' text-white text-2xl' color='blueViolet' top={800} smooth />
       <Header navLink={navLinks} />
 
       <main>
@@ -66,7 +66,7 @@ function App() {
 
         </section>
         <section className=' max-lg:overflow-hidden  relative mt-20 mb-8 lg:mx-16 mx-1 flex lg:flex-row flex-col-reverse justify-between items-center gap-6'>
-          <div className='h-[500px]  relative lg:w-3/5 xl:w-2/4 max-sm:mx-10'>
+          <div className='h-[500px]  relative lg:w-3/5 xl:w-2/4 max-sm:mr-10'>
             <SwiperVertical info={cards} />
           </div>
           <div className=' flex  flex-col justify-start gap-5 lg:w-2/5 xl:w-2/4 '>
@@ -118,7 +118,7 @@ function App() {
           </div>
         </section>
         <section>
-          <div className='my-32 flex flex-col lg:flex-row gap-16 px-12 mx-4  max-md:px-4 '>
+          <div className='my-32 max-sm:my-10 flex flex-col lg:flex-row gap-16 px-12 mx-4  max-md:px-4 '>
             <div className=' lg:w-2/5 text-center lg:text-right flex flex-col'>
               <h2 className=' text-4xl leading-relaxed max-md:text-lg'>
                 وب سایت <span className=' text-rose-600 font-bold ' >لورم ایپسوم </span> <br />
@@ -188,7 +188,7 @@ function App() {
                 <span className=' text-rose-700' > ایپسوم </span>
                 چیست؟
               </h2>
-              <p className=' text-center mb-12 mt-6 max-w-4xl'>
+              <p className=' text-center mb-12 mt-6 max-w-4xl max-sm:text-justify'>
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
               </p>
             </div>
@@ -207,7 +207,7 @@ function App() {
                       <h3 className=' text-2xl font-bold'>{man.name}</h3>
                     </div>
                     <div className=' text-center px-3'>
-                      <p className=' text-gray-500 text-md pb-6  leading-7'>{man.bio}</p>
+                      <p className=' text-gray-500 text-md pb-6  leading-7 max-sm:text-justify'>{man.bio}</p>
                     </div>
                   </div>
                   <div className=' relative  flex flex-row justify-center pb-16 gap-6 mb-6'>

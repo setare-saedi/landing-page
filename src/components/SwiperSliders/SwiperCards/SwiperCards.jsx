@@ -28,7 +28,7 @@ function SwiperCards({ allCard }) {
                   <img src={card.iconUrl} alt={card.title} width={24} height={24} className=''/>
                 </div>
                 <h3 className=' text-xl font-bold'>{card.title}</h3>
-                <div className=' flex-1 text-sm  mt-2'>{card.description}</div>
+                <div className=' flex-1 text-sm  mt-2 max-sm:text-justify'>{card.description}</div>
               </div>
               </SwiperSlide>
           ))

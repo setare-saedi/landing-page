@@ -63,7 +63,7 @@ function SwiperFreeMode({ allInfo }) {
                                         <h3 className=' text-2xl font-bold'>{card.title}</h3>
                                     </div>
                                     <div className=' text-center'>
-                                        <p className=' text-gray-600 pb-16 mb-3 leading-7'>{card.description}</p>
+                                        <p className=' text-gray-600 pb-16 mb-3 leading-7 max-sm:text-justify'>{card.description}</p>
                                     </div>
                                 </div>
                                 {/* <div className='card-bottom-line'></div> */}
