@@ -46,7 +46,7 @@ function SwiperVertical({ info }) {
                   </div>
                   <div className=' text-lg lg:text-2xl font-bold text-violet-900'>{card.title}</div>
                   <div className='  pb-10  text-sm lg:text-xl'>
-                    <p className=' leading-loose '>{card.description}</p>
+                    <p className=' leading-loose max-sm:text-justify'>{card.description}</p>
                   </div>
 
                 </div>

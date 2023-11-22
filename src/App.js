@@ -65,7 +65,7 @@ function App() {
           </div>
 
         </section>
-        <section className=' max-lg:overflow-hidden  relative mt-20 mb-8 lg:mx-16 mx-1 flex lg:flex-row flex-col-reverse justify-between items-center gap-6'>
+        <section className=' max-lg:overflow-hidden  relative mt-20 mb-8 lg:mx-16 mx-3 flex lg:flex-row flex-col-reverse justify-between items-center gap-6'>
           <div className='h-[500px]  relative lg:w-3/5 xl:w-2/4 max-sm:mr-10'>
             <SwiperVertical info={cards} />
           </div>
@@ -75,10 +75,10 @@ function App() {
               <span className='text-pink-600' > ایپسوم </span>
               فارسی ...
             </h2>
-            <p className=' text-xl text-gray-600 lg:max-w-lg text-center lg:text-right max-lg:text-center max-lg:text-base leading-normal  max-md:text-justify'>
+            <p className=' text-xl text-gray-600 lg:max-w-lg text-center lg:text-right max-lg:text-center max-lg:text-base leading-normal  max-md:text-justify max-sm:text-justify'>
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
             </p>
-            <p className=' text-xl text-gray-600 lg:max-w-lg text-center lg:text-right max-lg:text-center max-lg:text-base leading-normal  max-md:text-justify'>
+            <p className=' text-xl text-gray-600 lg:max-w-lg text-center lg:text-right max-lg:text-center max-lg:text-base leading-normal  max-md:text-justify max-sm:text-justify'>
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
             </p>
             {/* <div className='mt-16 grid grid-cols-1 gap-14 sm:gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
@@ -130,7 +130,7 @@ function App() {
               <p className=' text-xl mb-6 text-gray-600 text-justify max-lg:text-center max-lg:text-base leading-normal max-md:text-justify'>
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
               </p>
-              <div className=' flex xl:flex-row justify-center xl:justify-start gap-6 lg:flex-col max-md:flex-row '>
+              <div className=' flex xl:flex-row justify-center xl:justify-start gap-6 lg:flex-col max-md:flex-row max-sm:flex-col '>
                 <Button label='لورم ایپسوم فارسی' class1='btn' />
                 <Button label='لورم ایپسوم ' class1='btn-outline' />
               </div>
@@ -151,10 +151,10 @@ function App() {
         <section>
           <div className=' flex xl:flex-row flex-col items-center  gap-10 my-6 mx-16 '>
             <div className='flex flex-col space-y-12 max-lg:space-y-6 max-md:space-y-4 xl:w-2/4'>
-              <h2 className='text-4xl font-bold'>لورم <span className=' text-rose-700 '> ایپسوم</span></h2>
-              <p className=' text-xl text-gray-800 text-justify max-lg:text-center max-lg:text-base leading-normal max-md:text-justify'>
+              <h2 className='text-4xl font-bold max-sm:text-base max-sm:text-center max-md:text-lg'>لورم <span className=' text-rose-700 '> ایپسوم</span></h2>
+              <p className=' text-xl text-gray-800 text-justify max-lg:text-center max-lg:text-base leading-normal max-md:text-justify max-md:text-sm'>
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد              </p>
-              <p className=' text-xl text-gray-800 text-justify max-lg:text-center max-lg:text-base leading-normal max-md:text-justify'>
+              <p className=' text-xl text-gray-800 text-justify max-lg:text-center max-lg:text-base leading-normal max-md:text-justify  max-md:text-sm'>
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
               </p>
               <div className='max-lg:text-center'>

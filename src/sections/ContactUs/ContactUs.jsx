@@ -9,7 +9,7 @@ function ContactUs() {
         <div className=' flex lg:flex-row flex-col items-center justify-between lg:mx-6 mx-1 '>
             <div className=' space-y-6 text-center lg:text-right'>
                 <div>
-                    <h2 className=' text-3xl font-bold text-violet-900'>تماس با ما</h2>
+                    <h2 className=' text-3xl font-bold text-violet-900'> فرم درخواست همکاری </h2>
                 </div>
                 <div>
                     <p className=' text-lg font-bold'>آدرس:</p>
