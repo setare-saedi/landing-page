@@ -149,7 +149,7 @@ function App() {
           <Cards cardInfo={cards} />
         </section>
         <section>
-          <div className=' flex xl:flex-row flex-col items-center  gap-10 my-6 mx-16 '>
+          <div className=' flex xl:flex-row flex-col items-center  gap-10 my-6 mx-16 max-sm:mx-6'>
             <div className='flex flex-col space-y-12 max-lg:space-y-6 max-md:space-y-4 xl:w-2/4'>
               <h2 className='text-4xl font-bold max-sm:text-base max-sm:text-center max-md:text-lg'>لورم <span className=' text-rose-700 '> ایپسوم</span></h2>
               <p className=' text-xl text-gray-800 text-justify max-lg:text-center max-lg:text-base leading-normal max-md:text-justify max-md:text-sm'>
@@ -161,7 +161,8 @@ function App() {
                 <Button label='متن لورم فارسی' class1='btn' />
               </div>
             </div>
-            <div className='flex flex-col relative my-4 xl:w-2/4'>
+
+            <div className='flex flex-col relative my-4 xl:w-2/4 max-sm:mx-10'>
               <div className=' w-full flex xl:justify-end justify-center'>
                 <img src='./img/4.jpg' alt='laptop' width='616px' height='150px' className=' bg-violet-200 rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700' />
               </div>
@@ -188,7 +189,7 @@ function App() {
                 <span className=' text-rose-700' > ایپسوم </span>
                 چیست؟
               </h2>
-              <p className=' text-center mb-12 mt-6 max-w-4xl max-sm:text-justify'>
+              <p className=' text-center mb-12 mt-6 max-w-4xl max-sm:text-justify leading-loose'>
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
               </p>
             </div>
