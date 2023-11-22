@@ -31,8 +31,7 @@ function App() {
 
   return (
     <div className="">
-              <ScrollToTop component={<MdKeyboardDoubleArrowUp />}  className=' text-white text-2xl'  color='blueViolet' top={1000} smooth />
-
+      <ScrollToTop component={<MdKeyboardDoubleArrowUp />} className=' text-white text-2xl' color='blueViolet' top={1000} smooth />
       <Header navLink={navLinks} />
 
       <main>
@@ -67,7 +66,7 @@ function App() {
 
         </section>
         <section className=' max-lg:overflow-hidden  relative mt-20 mb-8 lg:mx-16 mx-1 flex lg:flex-row flex-col-reverse justify-between items-center gap-6'>
-          <div className='h-[500px]  relative lg:w-3/5 xl:w-2/4 '>
+          <div className='h-[500px]  relative lg:w-3/5 xl:w-2/4 max-sm:mx-10'>
             <SwiperVertical info={cards} />
           </div>
           <div className=' flex  flex-col justify-start gap-5 lg:w-2/5 xl:w-2/4 '>
@@ -268,7 +267,7 @@ function App() {
           </div> */}
         </section>
 
-     
+
 
       </main>
       <Footer />
