@@ -18,9 +18,9 @@
   height: unset;
   min-height: max-content;
 }
-.swiper-slide-card:nth-child(odd) {
+.swiper-card:nth-child(odd) {
   background-color: rgb(234, 214, 254);
 }
-.swiper-slide-card:nth-child(even) {
+.swiper-card:nth-child(even) {
     background-color: #f4ecfd;
   }

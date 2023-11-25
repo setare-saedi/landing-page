@@ -35,10 +35,10 @@ function App() {
       <Header navLink={navLinks} />
 
       <main>
-        <section className=' relative w-full flex lg:flex-row px-4   flex-col justify-evenly  min-h-full  gap-10  ' >
-          <div className=' text-center lg:text-right w-full relative  lg:w-2/5 flex flex-col lg:mt-16 pt-5 mt-10  justify-center '>
+        <section className=' relative w-full flex lg:flex-row px-4   flex-col justify-evenly  min-h-full  gap-9  ' >
+          <div className=' text-center lg:text-right w-full relative  lg:w-2/5 flex flex-col lg:mt-12 pt-5 mt-10  justify-center '>
             <p className='  mb-2  text-pink-600 text-2xl max-md:text-base'>لورم ایپسوم .....</p>
-            <h1 className='  relative xl:text-8xl text-4xl my-5  font-semibold z-10 xl:whitespace-nowrap max-md:text-lg' >
+            <h1 className='  relative xl:text-8xl text-3xl my-5  font-semibold z-10 xl:whitespace-nowrap max-md:text-lg' >
               <span className='bg-white '>لورم  تولید متن ساختگی
               </span>
               <br />
@@ -48,10 +48,10 @@ function App() {
             <div className=' '>
               <Button label=' کلیک کنید' class1='btn' />
             </div>
-            <div className=' flex justify-between text-center gap-10 max-sm:gap-2 max-sm:justify-evenly my-4 py-4'>
+            <div className=' flex justify-between text-center gap-10 max-sm:gap-2 max-sm:justify-evenly my-2 py-4'>
               {statistics.map((stat) => (<div key={stat.id}>
                 <p className=' text-2xl text-gray-600 max-sm:text-sm max-sm:font-bold'>{stat.label}</p>
-                <p className=' text-4xl my-5 text-violet-900 font-bold max-sm:text-sm '><Counter count={stat.value} /></p>
+                <p className=' text-4xl my-4 text-violet-900 font-bold max-sm:text-sm '><Counter count={stat.value} /></p>
               </div>))}
             </div>
           </div>
