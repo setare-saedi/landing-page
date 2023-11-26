@@ -1,6 +1,6 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-import { apiKey } from '../../constants/emailkey';
+
 import { ImFacebook } from 'react-icons/im';
 import { FaTwitter } from 'react-icons/fa';
 import { PiInstagramLogoFill } from 'react-icons/pi';
@@ -11,7 +11,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from "yup";
 // import "yup-phone";
 function ContactUs() {
-console.log(apiKey);
+
     const SignupSchema = Yup.object().shape({
         name: Yup.string()
             .min(5, 'نام نباید کمتر از 5 کاراکتر باشد')
@@ -24,7 +24,7 @@ console.log(apiKey);
             .min(11, 'شماره ی وارد شده صحیح نیست')
             .max(11, 'شماره ی وارد شده صحیح نیست')
             .required('لطفا شماره تماس را وارد نمایید')
-            // .matches(/^[0]{1}+[0-9]{10}$/i, 'شماره صحیح نیست')
+        // .matches(/^[0]{1}+[0-9]{10}$/i, 'شماره صحیح نیست')
     });
 
     return (
@@ -89,25 +89,26 @@ console.log(apiKey);
                             }}
                             validationSchema={SignupSchema}
                             onSubmit={(e) => {
-                                console.log(e);
+                                if (e.companyName === '') {
+                                    e.companyName = '-'
+                                }
+                                const regex = /(<([^>]+)>)/gi;
                                 let templateParams = {
-                                    email: e.email,
-                                    name: e.name,
-                                    msg: e.msg,
-                                    companyName: e.companyName,
-                                    phoneNum: e.phoneNum,
-                                   }
-                                   console.log(templateParams);
-                                   console.log( apiKey.SERVICE_ID);
-                                // e.preventDefault(); 
-                                emailjs.send(apiKey.SERVICE_ID, apiKey.TEMPLATE_ID, templateParams, apiKey.USER_ID)
+                                    email: e.email.replace(regex, ""),
+                                    name: e.name.replace(regex, ""),
+                                    msg: e.msg.replace(regex, ""),
+                                    companyName: e.companyName.replace(regex, ""),
+                                    phoneNum: e.phoneNum.replace(regex, ""),
+                                }
+                                emailjs.send(process.env.REACT_APP_SERVIC_ID, process.env.REACT_APP_TEMPLATE_ID, templateParams, process.env.REACT_APP_USER_ID)
                                     .then((result) => {
                                         alert("پیام شما ارسال شد به زودی با شما تماس میگیریم.", result.text);
                                     },
                                         (error) => {
-                                            alert("An error occurred, Please try again", error.text);
+                                            alert("متاسفانه پیام شما ارسال نشد لطفا دوباره تلاش کنید", error.text);
                                         });
-                            }}
+                            }
+                            }
                         >
                             {({ errors, touched }) => (
                                 <Form>
