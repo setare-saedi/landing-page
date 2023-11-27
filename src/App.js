@@ -29,6 +29,7 @@ import './index.css';
 function App() {
   const [bigImage, setBigImage] = useState(slideImg[0].src);
 
+
   return (
     <div className="">
       <ScrollToTop component={<MdKeyboardDoubleArrowUp />} className=' text-white text-2xl' color='blueViolet' top={800} smooth />

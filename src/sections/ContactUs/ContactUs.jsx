@@ -10,7 +10,19 @@ import Bg from '../../components/Bg/Bg';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from "yup";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function ContactUs() {
+
+    const notify = () => {
+        console.log('toast');
+        toast.success("Wow so easy !", {
+            className: " bg-green-100"
+        })
+
+
+    }
 
     const SignupSchema = Yup.object().shape({
         name: Yup.string()
@@ -33,6 +45,18 @@ function ContactUs() {
 
     return (
         <div className=' flex lg:flex-row flex-col items-center justify-between lg:mx-6 mx-1 '>
+              < ToastContainer
+                            position="top-center"
+                            autoClose={10000}
+                            hideProgressBar={false}
+                            newestOnTop={false}
+                            closeOnClick
+                            rtl
+                            pauseOnFocusLoss
+                            draggable
+                            pauseOnHover
+                            theme="light"
+                        />
             <div className=' space-y-6 text-center lg:text-right'>
                 <div>
                     <h2 className=' text-3xl font-bold text-violet-900'> تماس با ما </h2>
@@ -80,6 +104,7 @@ function ContactUs() {
                 </p>
                 <div className='  border-2 shadow-lg shadow-violet-200  my-10 px-8 py-10 bg-white lg:w-[90%] mx-auto '>
                     <div>
+                      
                         <Formik
                             initialValues={{
                                 name: '',
@@ -104,9 +129,10 @@ function ContactUs() {
                                     phoneNum: e.phoneNum.replace(regex, ""),
                                 }
                                 emailjs.send(process.env.REACT_APP_SERVIC_ID, process.env.REACT_APP_TEMPLATE_ID, templateParams, process.env.REACT_APP_USER_ID)
-                                    .then((result) => {
-                                        alert("پیام شما ارسال شد به زودی با شما تماس میگیریم.", result.text);
-                                    },
+                                    .then((result) => (
+                                        notify()
+
+                                    ),
                                         (error) => {
                                             alert("متاسفانه پیام شما ارسال نشد لطفا دوباره تلاش کنید", error.text);
                                         });
@@ -119,12 +145,12 @@ function ContactUs() {
                                         <div className=' flex flex-col max-md:space-y-10 md:flex-row md:gap-3 '>
                                             <div className='flex flex-col w-full'>
                                                 <label className='text-md font-bold max-sm:text-base ' >نام و نام خانوادگی <span className=' text-red-500 font-bold text-xl'>*</span></label>
-                                                <Field name="name" type="text" placeholder={'نام'} className={ ` mb-2 px-2 py-1 rounded-md shadow-md border-2 
+                                                <Field name="name" type="text" placeholder={'نام'} className={` mb-2 px-2 py-1 rounded-md shadow-md border-2 
                                                 ${!touched.name ? 'caret-violet-500 focus:outline-violet-500 shadow-violet-200 '
-                                                    : (errors.name && touched.name) ? 'caret-red-500 focus:outline-red-500 border-red-500 shadow-red-200'
-                                                        : ' caret-green-500 focus:outline-green-500 border-green-500 shadow-green-200'} `} />
+                                                        : (errors.name && touched.name) ? 'caret-red-500 focus:outline-red-500 border-red-500 shadow-red-200'
+                                                            : ' caret-green-500 focus:outline-green-500 border-green-500 shadow-green-200'} `} />
                                                 {errors.name && touched.name ? (
-                                                    <ErrorMessage component="div" name="name" className=' text-red-700 pr-3 text-base '/>
+                                                    <ErrorMessage component="div" name="name" className=' text-red-700 pr-3 text-base ' />
                                                 ) : null}
                                             </div>
 
@@ -132,10 +158,10 @@ function ContactUs() {
                                                 <label className='text-md font-bold max-sm:text-base'>ایمیل <span className=' text-red-500 font-bold text-xl'>*</span></label>
                                                 <Field dir='ltr' name="email" type="text" placeholder={'info@gmail.com'} className={`mb-2 rounded-md shadow-md px-2 py-1 border-2 
                                                 ${!touched.email ? 'caret-violet-500 focus:outline-violet-500 shadow-md shadow-violet-200'
-                                                    : (errors.email && touched.email) ? 'caret-red-500 focus:outline-red-500 border-red-500 shadow-red-200'
-                                                        : 'caret-green-500 focus:outline-green-500 border-green-500 shadow-green-200'} `} />
+                                                        : (errors.email && touched.email) ? 'caret-red-500 focus:outline-red-500 border-red-500 shadow-red-200'
+                                                            : 'caret-green-500 focus:outline-green-500 border-green-500 shadow-green-200'} `} />
                                                 {errors.email && touched.email ? (
-                                                    <ErrorMessage component="div" name="email" className=' text-red-700 pr-3 text-base '/>
+                                                    <ErrorMessage component="div" name="email" className=' text-red-700 pr-3 text-base ' />
                                                 ) : null}
 
                                             </div>
@@ -143,12 +169,12 @@ function ContactUs() {
                                         <div className=' flex flex-col max-md:space-y-10 md:flex-row md:gap-3 '>
                                             <div className='flex flex-col w-full ' >
                                                 <label className='text-md font-bold max-sm:text-base '  >شماره تماس <span className=' text-red-500 font-bold text-xl'>*</span></label>
-                                                <Field dir='ltr'  name="phoneNum" type="text" placeholder={'09100000000'} className={`mb-2 rounded-md shadow-md px-2 py-1 border-2
+                                                <Field dir='ltr' name="phoneNum" type="text" placeholder={'09100000000'} className={`mb-2 rounded-md shadow-md px-2 py-1 border-2
                                                 ${!touched.phoneNum ? 'caret-violet-500 focus:outline-violet-500 shadow-violet-200'
-                                                    : (errors.phoneNum && touched.phoneNum) ? 'caret-red-500 focus:outline-red-500 border-red-500 shadow-red-200'
-                                                        : ' caret-green-500 focus:outline-green-500 border-green-500 shadow-green-200 '} `} />
+                                                        : (errors.phoneNum && touched.phoneNum) ? 'caret-red-500 focus:outline-red-500 border-red-500 shadow-red-200'
+                                                            : ' caret-green-500 focus:outline-green-500 border-green-500 shadow-green-200 '} `} />
                                                 {errors.phoneNum && touched.phoneNum ? (
-                                                    <ErrorMessage component="div" name="phoneNum" className=' text-red-700 pr-3 text-base '/>
+                                                    <ErrorMessage component="div" name="phoneNum" className=' text-red-700 pr-3 text-base ' />
                                                 ) : null}
                                             </div>
                                             <div className='flex flex-col w-full'>
@@ -162,15 +188,15 @@ function ContactUs() {
                                             ${!touched.msg ? 'caret-violet-500 focus:outline-violet-500 shadow-violet-200 '
                                                     : (errors.msg && touched.msg) ? 'caret-red-500 focus:outline-red-500 border-red-500 shadow-red-200'
                                                         : ' caret-green-500 focus:outline-green-500 border-green-500 shadow-green-200'} `} />
-                                                        {errors.msg && touched.msg ? (
-                                                    <ErrorMessage component="div" name="msg" className=' text-red-700 pr-3 text-base '/>
-                                                ) : null}
+                                            {errors.msg && touched.msg ? (
+                                                <ErrorMessage component="div" name="msg" className=' text-red-700 pr-3 text-base ' />
+                                            ) : null}
                                         </div>
                                         <div className=' text-left  mt-3'>
                                             {
                                                 errors.name || errors.email || errors.phoneNum || errors.msg || !touched.name ?
-                                                <button type="submit" disabled className=' bg-violet-100 text-violet-900 border-2 border-violet-200 px-8 py-2 rounded-md font-bold hover:bg-violet-100 '>ثبت درخواست</button>
-                                                : <button type="submit"  className=' bg-violet-600 text-white px-8 py-2 rounded-md font-bold hover:bg-violet-800 '>ثبت درخواست</button>
+                                                    <button type="submit" disabled className=' bg-violet-100 text-violet-900 border-2 border-violet-200 px-8 py-2 rounded-md font-bold hover:bg-violet-100 '>ثبت درخواست</button>
+                                                    : <button type="submit" className=' bg-violet-600 text-white px-8 py-2 rounded-md font-bold hover:bg-violet-800 '>ثبت درخواست</button>
 
                                             }
                                         </div>
