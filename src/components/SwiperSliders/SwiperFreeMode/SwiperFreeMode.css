@@ -1,7 +1,4 @@
-/* .SwiperFreeMode{
-    min-height: max-content;
-    height: unset !important;
-} */
+
 .swiper-slide-free {
    
     min-height: max-content;
@@ -14,25 +11,15 @@
     box-shadow: 0px 0px 30px #00000045;
     min-height: max-content;
     height: unset !important;
-    background-color: rgb(254, 253, 255);
+    /* background-color: rgb(254, 253, 255); */
 }
-.card-bottom-line{
-    content: '';
-    width: 25%;
-    height: 5px;
-    position: absolute;
-    bottom: 7%;
-    left: 7%;
-    background-color: rgb(190, 129, 255);
-}
-.SwiperFreeMode .swiper-pagination-bullet{
 
+.SwiperFreeMode .swiper-pagination-bullet{
     background-color: rgb(142, 44, 247);
     width: 2%;
     height: 5px;
     border-radius: 0%;
     margin: 1% !important;
-    bottom: 0 !important;
-  
+   bottom: 0 !important; 
   }
   

@@ -2,11 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 import './App.css';
 import { navLinks, statistics, slideImg, products, cards, managers, skills } from './constants';
-import { ImStarFull } from 'react-icons/im';
-import Bg from './components/Bg/Bg';
 import Button from './components/Button';
 import SlideItems from './components/SlideItems';
-import ProgressBar1 from './components/ProgressBar/ProgressBar';
 import SwiperParallax from './components/SwiperSliders/SwiperParallax/SwiperParallax';
 import SwiperSliderPerView from './components/SwiperSliders/SwiperSliderPerView/SwiperSliderPerView';
 import SwiperVertical from './components/SwiperSliders/SwiperVertical/SwiperVertical';
@@ -31,8 +28,10 @@ function App() {
 
 
   return (
-    <div className="">
-      <ScrollToTop component={<MdKeyboardDoubleArrowUp />} className=' text-white text-2xl' color='blueViolet' top={800} smooth />
+    <div >
+      <span >
+        <ScrollToTop component={<MdKeyboardDoubleArrowUp />} className=' text-white text-2xl ' color='blueViolet' top={800} smooth />
+      </span>
       <Header navLink={navLinks} />
 
       <main>
@@ -82,31 +81,7 @@ function App() {
             <p className=' text-xl text-gray-600 lg:max-w-lg text-center lg:text-right max-lg:text-center max-lg:text-base leading-normal  max-md:text-justify max-sm:text-justify'>
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
             </p>
-            {/* <div className='mt-16 grid grid-cols-1 gap-14 sm:gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
-              {products.map((pro) => (
-                <div key={pro.id} className='flex flex-col ' >
-                  <div className=' wave overflow-hidden relative border-2 border-violet-100 rounded-md justify-center items-center bg-violet-100 flex flex-col flex-1 '>
-                    <img src={pro.imgUrl} className=' z-20' width='250px' height='250px' alt={pro.name} />
-                  </div>
 
-                  <div className=' p-4 mt-2 text-center xl:text-right'>
-                    <h3 className=' text-2xl'>
-                      {pro.name}
-                    </h3>
-                  </div>
-
-                  <div className=' flex flex-col  xl:flex-row justify-between items-center px-4 pb-4'>
-                    <div className='  flex justify-start items-center gap-2'>
-                      <span className='text-lg text-yellow-800'>(4.5)</span>
-                      <ImStarFull className=' text-yellow-300 text-xl' />
-                    </div>
-                    <div>
-                      {pro.price > 0 ? <p className=' text-2xl text-gray-700'>{pro.price} <span className=' text-lg text-gray-500'>تومان</span></p> : <p className=' text-green-600 font-bold text-2xl'>رایگان ! </p>}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div> */}
           </div>
 
         </section>
@@ -154,7 +129,8 @@ function App() {
             <div className='flex flex-col space-y-12 max-lg:space-y-6 max-md:space-y-4 xl:w-2/4'>
               <h2 className='text-4xl font-bold max-sm:text-base max-sm:text-center max-md:text-lg'>لورم <span className=' text-rose-700 '> ایپسوم</span></h2>
               <p className=' text-xl text-gray-800 text-justify max-lg:text-center max-lg:text-base leading-normal max-md:text-justify max-md:text-sm'>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد              </p>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد          
+              </p>
               <p className=' text-xl text-gray-800 text-justify max-lg:text-center max-lg:text-base leading-normal max-md:text-justify  max-md:text-sm'>
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
               </p>
@@ -169,20 +145,28 @@ function App() {
               </div>
               <div className=' hidden sm:flex flex-row flex-1  items-center xl:justify-end justify-center gap-4 my-4'>
                 <div>
-                  <img src='./img/2.jpeg' alt='laptop' width='300px' height='100px' className=' bg-violet-200 rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700' />
+                  <div className=' relative group '>
+                    <img src='./img/2.jpeg' alt='laptop' width='300px' height='100px' className=' bg-violet-200 rounded-md ' />
+                    <div className=" py-2 opacity-0 group-hover:opacity-100 duration-500 absolute inset-x-0 bottom-0 flex justify-center items-center text-3xl bg-opacity-70 bg-gray-300 text-violet-900 font-bold">
+                      DELL
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <img src='./img/2.jpeg' alt='laptop' width='300px' height='100px' className=' bg-violet-200 rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700' />
+
+                <div className=' relative group '>
+                  <img src='./img/2.jpeg' alt='laptop' width='300px' height='100px' className=' bg-violet-200 rounded-md ' />
+                  <div className=" py-2 opacity-0 group-hover:opacity-100 duration-500 absolute inset-x-0 bottom-0 flex justify-center items-center text-3xl bg-opacity-70 bg-gray-300 text-violet-900 font-bold">
+                    DELL
+                  </div>
                 </div>
+
               </div>
               <div className=' offer '>
               </div>
             </div>
           </div>
         </section>
-
         <section>
-
           <div className=' flex xl:flex-row flex-col my-4 p-6 bg-violet-50 relative gap-5'>
             <div className=' flex flex-col items-center justify-center '>
               <h2 className=' text-center text-4xl  '>
@@ -194,15 +178,16 @@ function App() {
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
               </p>
             </div>
+
             <div className=' flex lg:flex-row flex-col gap-2 justify-evenly items-center '>
               {managers.map(man =>
-                <div key={man.id} className='h-full flex flex-col flex-1 relative bg-white text-center shadow-md'>
-                  <div className=' flex justify-between items-center p-8'>
+                <div key={man.id} className='h-full flex flex-col flex-1 relative bg-white text-center '>
+                  <div className=' flex justify-between items-center p-8  '>
                     <p className=' text-violet-600 text-3xl font-bold'>+</p>
                     <p className=' text-violet-300 font-bold text-lg'>{man.expertise}</p>
                   </div>
                   <div className='flex gap-9  flex-1 justify-center items-center flex-col'>
-                    <div className='  flex justify-center items-center w-28 h-28 border-2 border-violet-50  rounded-full'>
+                    <div className=' flex justify-center items-center w-28 h-28 border-2 border-violet-50  rounded-full'>
                       <img src={man.imgUrl} alt={man.name} className=' w-20 h-20 ' />
                     </div>
                     <div>
@@ -247,29 +232,8 @@ function App() {
           <div className=' relative'>
             <ContactUs />
           </div>
-          {/* <div className=' flex flex-col flex-1  lg:flex-row  justify-between items-center my-12 mx-12'>
-            <div className=' lg:w-2/4'>
-              <h3 className=' text-3xl text-center ' >
-                برای دریافت آخرین اخبار و تخفیفات ویژه <span className=' text-rose-500'> ایمیل </span> خود را وارد کنید
-              </h3>
-            </div>
-            <div className=' lg:w-2/4 my-2'>
-              <form >
-                <div className='border-2 flex justify-between rounded-full w-full'>
-                  <input className=' xl:w-[70%] rounded-r-full ring-0 border-0 px-4 outline-0' type='text' placeholder='ایمیل خود را وارد کنید...' />
-                  <div className=' flex justify-end m-2'>
-                    <Button label='ثبت ایمیل' class1='btn' />
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div>
 
-            </div>
-          </div> */}
         </section>
-
-
 
       </main>
       <Footer />

@@ -32,7 +32,7 @@ function SwiperParallax({ allSkills }) {
             >
                 <div
                     slot="container-start"
-                    className="parallax-bg"
+                    className="parallax-bg "
                     style={{
                         'backgroundImage':
                             'url(./../../img/bg-pa.jpg)',
