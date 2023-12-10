@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --clr-bg-dark: #242e3d; /* gray-800 */
+  --clr-bg-light: #fafafa; /* zinc-50 */
+
+  --clr-text-dark: #1f2937; /* gray-200 */
+  --clr-text-light: #fafafa; /* zinc-50 */
+}
+
+
+.light {
+  background-color: var(--clr-bg-light);
+  color: var(--clr-text-dark);
+}
+
+.dark {
+  background-color: var(--clr-bg-dark);
+  color: var(--clr-text-light);
+
+}
+
 body {
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -94,11 +114,11 @@ a:hover {
 }
 
 .btn {
-  @apply transition ease-in-out delay-150 hover:-translate-x-1 hover:scale-105 duration-700 bg-violet-500 text-lg max-lg:text-sm text-white rounded-md px-8 py-2 border-2 border-violet-400 hover:bg-violet-800 shadow-2xl shadow-violet-200;
+  @apply transition ease-in-out delay-150 hover:-translate-x-1 hover:scale-105 duration-700 bg-violet-500 text-lg max-lg:text-sm text-white rounded-md px-8 py-2 border-2 border-violet-400 hover:bg-violet-800 shadow-2xl shadow-violet-200 dark:shadow-gray-900;
 }
 
 .btn-outline {
-  @apply text-lg max-lg:text-sm transition ease-in-out delay-150 hover:-translate-x-1 hover:scale-105 duration-700 border-2 rounded-md border-violet-400 px-8 py-2 hover:bg-violet-200 hover:border-violet-100 shadow-2xl shadow-violet-200;
+  @apply text-lg max-lg:text-sm transition ease-in-out delay-150 hover:-translate-x-1 hover:scale-105 duration-700 border-2 rounded-md border-violet-400 px-8 py-2 hover:bg-violet-200 hover:border-violet-100 shadow-2xl shadow-violet-200 dark:shadow-gray-900;
 }
 
 .offer::before {

@@ -6,7 +6,7 @@ function Bg(
     return (
         <>
         <div> 
-            <div className=' bg-violet-stripes'></div>      
+            <div className='  bg-violet-stripes'></div>      
             <div className=' bg-black-stripes'></div>      
             <div className=' bg-gray-stripes'></div>      
             <div className=' bg-violet-dots'></div>

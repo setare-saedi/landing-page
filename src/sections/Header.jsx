@@ -1,12 +1,23 @@
 import React, { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { GrClose } from 'react-icons/gr'
+import './../index.css';
+import { MdOutlineNightlight, MdOutlineLightMode } from "react-icons/md";
 
-function Header({ navLink }) {
+
+function Header({ navLink, toggleDarkMode, darkMode }) {
   const [showMenu, setShowMenu] = useState(false);
+
+
   return (
     <header className='  px-4 items-center  py-4   absolute z-50 top-0 left-0 right-0 w-full'>
       <nav className=' flex justify-between items-center'>
+
+        <a href="#" className='flex items-center '>
+          <img src='./logo/star.png' width={40} height={40} alt='logo' />
+          <span className=' font-bold text-violet-900'>Setare</span>
+        </a>
+
 
         <div className='hidden max-lg:block'>
           {
@@ -24,27 +35,32 @@ function Header({ navLink }) {
         <div className={`${showMenu ? 'fixed top-0 right-0 z-50' : 'hidden'} p-6 min-h-screen lg:hidden  bg-violet-200     w-full rounded-xl`}>
           <div className=' flex flex-col '>
             <div className='  divide-y-2 divide-violet-50'>
-              <div  className=' flex justify-between items-center mb-4'>
+              <div className=' flex justify-between items-center mb-4'>
 
-                  <span><img src='./logo/star.png' width={36} height={36}/></span>
+                <span><img src='./logo/star.png' width={36} height={36} /></span>
                 <button onClick={() => { setShowMenu(!showMenu) }}>
                   <GrClose className=' w-6 h-6 ' />
-                  </button>
+                </button>
               </div>
-              <div>
+              <div >
 
                 <ul className='list-none flex flex-col space-y-4 pt-4'>
-                  {navLink.map(item => <li className=' border-r-2  border-violet-900 pr-2 hover:border-violet-400'  key={item.id}><a href={item.href}>{item.label}</a></li>)}
+                  {navLink.map(item => <li className=' border-r-2  border-violet-900 pr-2 hover:border-violet-400' key={item.id}><a href={item.href}>{item.label}</a></li>)}
                 </ul>
               </div>
             </div>
           </div>
         </div>
 
-        <a href="#" className='flex items-center cursor-pointer'>
-          <span className=' font-bold text-violet-900'>Setare</span>
-          <img src='./logo/star.png'  width={40} height={40} alt='logo' />
-        </a>
+
+        <button onClick={toggleDarkMode} className=' hover:text-violet-500 text-3xl  ' >
+          {
+            darkMode ? <MdOutlineLightMode  /> :
+              <MdOutlineNightlight />
+
+          }
+
+        </button>
       </nav>
     </header>
 

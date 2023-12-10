@@ -22,33 +22,38 @@ import './index.css';
 
 function App() {
   const [bigImage, setBigImage] = useState(slideImg[0].src);
-
+  const [darkMode, setDarkMode] = useState(true);
+  function toggleDarkMode() {
+    setDarkMode(!darkMode)
+}
 
   return (
-    <div >
+    <div className={` transition duration-700 ease-in-out 
+    ${darkMode ? "dark" : "light"}`}>
       <span >
         <ScrollToTop component={<MdKeyboardDoubleArrowUp />} className=' text-white text-2xl ' color='blueViolet' top={800} smooth />
       </span>
-      <Header navLink={navLinks} />
+      <Header navLink={navLinks}   darkMode={darkMode} 
+        toggleDarkMode={toggleDarkMode} />
 
       <main>
         <section className=' relative w-full flex lg:flex-row px-4   flex-col justify-evenly  min-h-full  gap-9  ' >
-          <div className=' text-center lg:text-right w-full relative  lg:w-2/5 flex flex-col lg:mt-12 pt-5 mt-10  justify-center '>
-            <p className='  mb-2  text-pink-600 text-2xl max-md:text-base'>لورم ایپسوم .....</p>
-            <h1 className='  relative xl:text-8xl text-3xl my-5  font-semibold z-10 xl:whitespace-nowrap max-md:text-lg' >
-              <span className='bg-white '>لورم  تولید متن ساختگی
+          <div className=' text-center lg:text-right w-full relative  lg:w-2/5 flex flex-col lg:mt-12 pt-4 mt-8  justify-center '>
+            <p className='  mb-3  text-pink-600 text-2xl max-md:text-base'>لورم ایپسوم .....</p>
+            <h1 className='  relative xl:text-8xl text-3xl my-4 font-semibold z-10 xl:whitespace-nowrap max-md:text-lg ' >
+              <span className='bg-white dark:bg-gray-500  '>لورم  تولید متن ساختگی
               </span>
               <br />
-              <span className=' text-purple-800 font-bold '>لورم </span> ایپسوم
+              <span className=' text-purple-800 font-bold leading-relaxed'>لورم </span> ایپسوم
             </h1>
-            <p className=' text-lg text-justify my-4 max-md:text-sm'> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+            <p className=' text-lg text-justify mb-4 max-md:text-sm'> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
             <div className=' '>
               <Button label=' کلیک کنید' class1='btn' />
             </div>
-            <div className=' flex justify-between text-center gap-10 max-sm:gap-2 max-sm:justify-evenly my-2 py-4'>
+            <div className=' flex justify-between text-center gap-10 max-sm:gap-2 max-sm:justify-evenly  py-4'>
               {statistics.map((stat) => (<div key={stat.id}>
-                <p className=' text-2xl text-gray-600 max-sm:text-sm max-sm:font-bold'>{stat.label}</p>
-                <p className=' text-4xl my-4 text-violet-900 font-bold max-sm:text-sm '><Counter count={stat.value} /></p>
+                <p className=' text-2xl dark:text-gray-400 text-gray-600 max-sm:text-sm max-sm:font-bold'>{stat.label}</p>
+                <p className=' text-4xl my-4 dark:text-violet-300 text-violet-900 font-bold max-sm:text-sm '><Counter count={stat.value} /></p>
               </div>))}
             </div>
           </div>
@@ -72,10 +77,10 @@ function App() {
               <span className='text-pink-600' > ایپسوم </span>
               فارسی ...
             </h2>
-            <p className=' text-xl text-gray-600 lg:max-w-lg text-center lg:text-right max-lg:text-center max-lg:text-base leading-normal  max-md:text-justify max-sm:text-justify'>
+            <p className=' text-xl dark:text-gray-300 text-gray-600 lg:max-w-lg text-center lg:text-right max-lg:text-center max-lg:text-base leading-normal  max-md:text-justify max-sm:text-justify'>
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
             </p>
-            <p className=' text-xl text-gray-600 lg:max-w-lg text-center lg:text-right max-lg:text-center max-lg:text-base leading-normal  max-md:text-justify max-sm:text-justify'>
+            <p className=' text-xl dark:text-gray-300 text-gray-600 lg:max-w-lg text-center lg:text-right max-lg:text-center max-lg:text-base leading-normal  max-md:text-justify max-sm:text-justify'>
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
             </p>
 
@@ -97,10 +102,10 @@ function App() {
                 وب سایت <span className=' text-rose-600 font-bold ' >لورم ایپسوم </span> <br />
                 یک سرویس کاملا رایگان و ساده
               </h2>
-              <p className=' text-xl my-4 text-gray-600 text-justify max-lg:text-center max-lg:text-base leading-normal  max-md:text-justify'>
+              <p className=' text-xl my-4 dark:text-gray-300 text-gray-600 text-justify max-lg:text-center max-lg:text-base leading-normal  max-md:text-justify'>
                 در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
               </p>
-              <p className=' text-xl mb-6 text-gray-600 text-justify max-lg:text-center max-lg:text-base leading-normal max-md:text-justify'>
+              <p className=' text-xl mb-6 dark:text-gray-300 text-gray-600 text-justify max-lg:text-center max-lg:text-base leading-normal max-md:text-justify'>
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
               </p>
               <div className=' flex xl:flex-row justify-center xl:justify-start gap-6 lg:flex-col max-md:flex-row max-sm:flex-col '>
@@ -125,10 +130,10 @@ function App() {
           <div className=' flex xl:flex-row flex-col items-center  gap-10 my-6 mx-16 max-sm:mx-6'>
             <div className='flex flex-col space-y-12 max-lg:space-y-6 max-md:space-y-4 xl:w-2/4'>
               <h2 className='text-4xl font-bold max-sm:text-base max-sm:text-center max-md:text-lg'>لورم <span className=' text-rose-700 '> ایپسوم</span></h2>
-              <p className=' text-xl text-gray-800 text-justify max-lg:text-center max-lg:text-base leading-normal max-md:text-justify max-md:text-sm'>
+              <p className=' text-xl dark:text-gray-300 text-gray-800 text-justify max-lg:text-center max-lg:text-base leading-normal max-md:text-justify max-md:text-sm'>
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد          
               </p>
-              <p className=' text-xl text-gray-800 text-justify max-lg:text-center max-lg:text-base leading-normal max-md:text-justify  max-md:text-sm'>
+              <p className=' text-xl dark:text-gray-300 text-gray-800 text-justify max-lg:text-center max-lg:text-base leading-normal max-md:text-justify  max-md:text-sm'>
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
               </p>
               <div className='max-lg:text-center'>

@@ -5,7 +5,6 @@ import { ImFacebook } from 'react-icons/im';
 import { FaTwitter } from 'react-icons/fa';
 import { PiInstagramLogoFill } from 'react-icons/pi';
 import { PiLinkedinLogoBold } from "react-icons/pi";
-import Bg from '../../components/Bg/Bg';
 
 import { Formik, Form, Field, ErrorMessage, useField } from 'formik';
 import * as Yup from "yup";
@@ -13,6 +12,7 @@ import * as Yup from "yup";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import Bg from '../../components/Bg/Bg';
 function ContactUs() {
 
 
@@ -62,7 +62,7 @@ function ContactUs() {
         setLoading(false)
     }
     return (
-        <div className=' flex lg:flex-row flex-col items-center justify-between lg:mx-6 mx-1 '>
+        <div className='  flex lg:flex-row flex-col items-center justify-between lg:mx-6 mx-1 '>
             < ToastContainer
                 position="top-center"
                 autoClose={10000}
@@ -78,29 +78,29 @@ function ContactUs() {
             />
             <div className=' space-y-6 text-center lg:text-right'>
                 <div>
-                    <h2 className=' text-3xl font-bold text-violet-900'> تماس با ما </h2>
+                    <h2 className=' dark:text-violet-400 text-3xl font-bold text-violet-900'> تماس با ما </h2>
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-5'>
                     <div>
                         <p className=' text-xl font-bold mx-2 max-sm:text-lg'>آدرس:</p>
-                        <p className=' text-lg max-sm:text-base text-gray-700 mt-3 mx-4'>لورم ایپسوم متن ساختگی، متن فارسی 2365</p>
+                        <p className='dark:text-gray-400 text-lg max-sm:text-base text-gray-700 mt-3 mx-4'>لورم ایپسوم متن ساختگی، متن فارسی 2365</p>
                     </div>
                     <div>
                         <p className=' text-lg font-bold mx-2 max-sm:text-lg'>شماره تماس:</p>
-                        <p className=' text-lg max-sm:text-base text-gray-700 mt-3 mx-4'>09100000000</p>
+                        <p className='dark:text-gray-400 text-lg max-sm:text-base text-gray-700 mt-3 mx-4'>09100000000</p>
                     </div>
                     <div>
                         <p className=' text-lg font-bold mx-2 max-sm:text-lg'> آدرس ایمیل:</p>
-                        <p className=' text-lg max-sm:text-base text-gray-700 mt-3 mx-4'>info@gmail.com</p>
+                        <p className='dark:text-gray-400 text-lg max-sm:text-base text-gray-700 mt-3 mx-4'>info@gmail.com</p>
                     </div>
                     <div>
                         <p className=' text-lg font-bold mx-2 max-sm:text-lg'>ساعت پاسخگویی:</p>
-                        <p className=' text-lg max-sm:text-base text-gray-700 mt-3 mx-4'>شنبه تا 4 شنبه از ساعت 9 تا 18</p>
+                        <p className='dark:text-gray-400 text-lg max-sm:text-base text-gray-700 mt-3 mx-4'>شنبه تا 4 شنبه از ساعت 9 تا 18</p>
                     </div>
                 </div>
                 <div>
                     <h2 className=' text-lg font-bold mx-2 max-sm:text-lg'>ما را در شبکه های اجتماعی دنبال کنید.</h2>
-                    <div className=' flex justify-center gap-3 my-6'>
+                    <div className=' flex  gap-3 my-6'>
                         <a href='#'>
                             <ImFacebook className='transition duration-700 ease-in-out  hover:bg-violet-200 hover:text-violet-800 bg-violet-800 text-white p-2 w-12 h-12 rounded-full' />
                         </a>
@@ -117,12 +117,13 @@ function ContactUs() {
                     </div>
                 </div>
             </div>
-            <div className='relative overflow-hidden lg:w-3/4'>
-                <div className=' max-sm:hidden'>
-                    <Bg />
-                </div>
-                <div className='  border-2 shadow-lg shadow-violet-200  my-10 px-8 py-10 bg-white lg:w-[90%] mx-auto '>
-                    <div>
+           
+            <div className='overflow-hidden lg:w-3/4 relative'>
+           
+                <div className=' max-sm:hidden '>
+                <Bg />
+            </div>
+                    <div className='dark:text-gray-900 relative dark:bg-gray-50  border-2 shadow-lg shadow-violet-200  my-10 px-8 py-10 bg-white lg:w-[90%] mx-auto '>
 
                         <Formik
                             initialValues={formValues}
@@ -161,7 +162,7 @@ function ContactUs() {
 
                             {({ errors, touched }) => (
                                 <Form >
-                                    <div className=' space-y-10 '>
+                                    <div className=' space-y-10 z-50'>
                                         <div className=' flex flex-col max-md:space-y-10 md:flex-row md:gap-3 '>
                                             <div className='flex flex-col w-full'>
                                                 <label className='text-md font-bold max-sm:text-base ' >نام و نام خانوادگی <span className=' text-red-500 font-bold text-xl'>*</span></label>
@@ -245,9 +246,8 @@ function ContactUs() {
                                 </Form>
                             )}
                         </Formik>
-
                     </div>
-                </div>
+
             </div>
         </div>
     );

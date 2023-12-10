@@ -27,9 +27,9 @@ function SwiperSliderPerView({ allSkills }) {
                     allSkills.map((skill) => (
                         <SwiperSlide className='bg-slide  min-h-max   swiper-slide-per-view' key={skill.id}>
                                 <div>
-                                    <h3 className=' text-xl font-bold'>{skill.title}</h3>
+                                    <h3 className=' text-xl font-bold dark:text-gray-800'>{skill.title}</h3>
                                 </div>
-                                <div className='z-20 leading-loose text-sm  mt-2 text-justify '>
+                                <div className='z-20 leading-loose text-sm  mt-2 text-justify dark:text-gray-900'>
                                     {skill.description.length > 250 ?
                                         <p className=' '>
                                             {skill.description.substring(0, 250)}

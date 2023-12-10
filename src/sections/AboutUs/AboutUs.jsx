@@ -10,12 +10,12 @@ import { PiLinkedinLogoBold } from "react-icons/pi";
     return(
         <div className=' flex xl:flex-row flex-col my-4 p-6 bg-violet-50 relative gap-5'>
             <div className=' flex flex-col items-center justify-center '>
-              <h2 className=' text-center text-4xl  '>
+              <h2 className=' text-center text-4xl  dark:text-gray-900'>
                 لورم
                 <span className=' text-rose-700' > ایپسوم </span>
                 چیست؟
               </h2>
-              <p className=' text-center mb-12 mt-6 max-w-4xl max-sm:text-justify leading-loose'>
+              <p className=' text-center dark:text-gray-800 mb-12 mt-6 max-w-4xl max-sm:text-justify leading-loose'>
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
               </p>
             </div>
