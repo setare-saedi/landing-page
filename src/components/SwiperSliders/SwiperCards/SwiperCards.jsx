@@ -4,7 +4,6 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 
 import { EffectCards } from 'swiper/modules';
-import './SwiperCards.css';
 
 
 function SwiperCards({ allCard }) {
@@ -18,17 +17,17 @@ function SwiperCards({ allCard }) {
       >
         {
           allCard.map((card) => (
-            <SwiperSlide className='swiper-card  rounded-lg p-3 flex flex-wrap flex-col items-stretch justify-center ' key={card.id}>
-              <div className='flex justify-between '>
-                <p className=' text-sm font-bold text-gray-500'>{card.subTitle}</p>
-                <p className=' font-bold text-sm text-violet-600'>{card.logo}</p>
+            <SwiperSlide className='swiper-card  ' key={card.id}>
+              <div className='swiper-card-header  '>
+                <p className='swiper-card-header-right '>{card.subTitle}</p>
+                <p className='swiper-card-header-left '>{card.logo}</p>
               </div>
-              <div  className='p-6 text-center flex justify-center flex-col items-center space-y-2 overflow-hidden'>
-                <div className=' flex justify-center items-center w-11 h-11 bg-violet-200  rounded-full'>
+              <div  className='swiper-card-body '>
+                <div className='swiper-card-img '>
                   <img src={card.iconUrl} alt={card.title} width={24} height={24} className=''/>
                 </div>
                 <h3 className=' text-xl font-bold'>{card.title}</h3>
-                <div className=' flex-1 text-sm  mt-2 max-sm:text-justify'>{card.description}</div>
+                <div className='swiper-card-text '>{card.description}</div>
               </div>
               </SwiperSlide>
           ))

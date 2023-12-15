@@ -1,0 +1,44 @@
+.banner{
+    @apply relative w-full flex lg:flex-row px-4   flex-col justify-evenly  min-h-full  gap-9  
+}
+.banner-body{
+    @apply text-center lg:text-right w-full relative  lg:w-2/5 flex flex-col lg:mt-12 pt-4 mt-8  justify-center 
+}
+.banner-header{
+    @apply mb-3  text-3xl max-md:text-base bg-clip-text font-extrabold text-transparent bg-gradient-to-tr  from-blue-900 to-pink-400
+}
+.banner-title{
+    @apply relative xl:text-8xl text-3xl my-4 font-semibold z-10 xl:whitespace-nowrap max-md:text-lg 
+}
+.banner-title-bg{
+    @apply bg-primary-200 dark:text-primary-100 dark:bg-primaryDark-600 text-black
+}
+.banner-title-brand{
+    @apply text-primary-500 dark:text-primary-300 font-bold leading-relaxed
+}
+.benner-description{
+    @apply text-lg text-justify mb-4 max-md:text-sm
+}
+.banner-counter{
+    @apply flex justify-between text-center gap-10 max-sm:gap-2 max-sm:justify-evenly  py-4
+}
+.banner-counter-label{
+    @apply text-2xl dark:text-gray-400 text-gray-600 max-sm:text-sm max-sm:font-bold
+}
+.banner-counter-value{
+    @apply text-4xl my-4 dark:text-primary-400 text-primaryDark-200 font-bold max-sm:text-sm 
+}
+.banner-img{
+    @apply cursor-pointer min-h-full   bg-primary-100    flex justify-center items-center  relative
+}
+.banner-img-items{
+    @apply z-20 flex overflow-hidden absolute -bottom-10 gap-4 justify-center items-center
+}
+.banner-img::after{
+    content: '';
+    @apply pattern-dots pattern-primary-500 pattern-bg-primary-100 pattern-size-6 opacity-90 absolute top-0 left-0  w-[30%] h-[40%]
+}
+.banner-img::before{
+    content: '';
+    @apply pattern-dots pattern-primary-500 pattern-bg-primary-100 pattern-size-6 opacity-90 absolute bottom-0 right-0 w-[30%] h-[40%]
+}

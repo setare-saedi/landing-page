@@ -1,0 +1,73 @@
+.contact-wrapper{
+    @apply  flex lg:flex-row flex-col items-center justify-between lg:mx-6 mx-1 
+}
+.contact-info{
+    @apply space-y-6 text-center lg:text-right
+}
+.contact-title{
+    @apply dark:text-violet-400 text-3xl font-bold text-violet-900
+}
+.contact-body{
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-5
+}
+.contact-text{
+    @apply text-xl font-bold mx-2 max-sm:text-lg
+}
+.contact-description{
+    @apply dark:text-gray-400 text-lg max-sm:text-base text-gray-700 mt-3 mx-4
+}
+.contact-social{
+    @apply flex  gap-3 my-6
+}
+.contact-social-link{
+    @apply transition duration-700 ease-in-out  hover:bg-violet-200 hover:text-violet-800 bg-violet-800 text-white p-2 w-12 h-12 rounded-full
+}
+.contact-form-wrapper{
+    @apply overflow-hidden lg:w-3/4 relative
+}
+.contact-form{
+    @apply  dark:text-gray-900 relative dark:bg-[#002138] border-2 shadow-lg shadow-violet-200
+    dark:shadow-[#002138] dark:border-[#002138]  my-10 px-8 py-10 bg-primary-300  lg:w-[90%] mx-auto 
+}
+.form-body{
+    @apply space-y-10 z-50
+}
+.form-row {
+    @apply flex flex-col max-md:space-y-10 md:flex-row md:gap-3 
+}
+.form-lable{
+    @apply text-base font-bold max-sm:text-base
+}
+.input-group{
+    @apply flex flex-col w-full
+}
+.form-input-required{
+    @apply text-red-500 font-bold text-xl
+}
+.form-input{
+    @apply caret-violet-500 focus:outline-violet-500 shadow-violet-200 
+}
+.form-input-error{
+    @apply caret-red-500 focus:outline-red-500 border-red-500 shadow-red-200
+}
+.form-input-success{
+    @apply caret-green-500 focus:outline-green-500 border-green-500 shadow-green-200
+}
+.form-input-default{
+    @apply mb-2 px-2 py-1 border-2 rounded-md shadow-md
+}
+.form-error-msg{
+    @apply text-red-700 pr-3 text-base
+}
+.form-btn-disabled{
+    @apply bg-violet-100 text-violet-900 border-2 border-violet-200 px-10 py-2 rounded-md font-bold hover:bg-violet-100 
+}
+.form-btn-submit{
+    @apply bg-violet-600 text-white px-10 py-2 rounded-md font-bold hover:bg-violet-800 
+}
+.form-btn-loadig{
+    @apply flex items-center bg-violet-200  border-2 border-violet-300 py-2 px-6 rounded-md
+}
+.form-msg{
+    @apply bg-green-100 py-6 text-center w-[80%] mx-auto rounded-md border-2 border-green-200
+}

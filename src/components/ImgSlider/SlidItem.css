@@ -1,0 +1,13 @@
+.img-slide-item{
+  @apply  bg-slid relative flex justify-center items-center border-2  rounded-lg bg-primary-100 h-40 w-40  max-sm:h-20 max-sm:w-20
+}
+.bg-slid::after {
+  content: '';
+  @apply pattern-dots pattern-primary-500 pattern-bg-primary-100 pattern-size-2 opacity-60 absolute top-0 left-0 w-[30%] h-[35%]
+  }
+  .bg-slid::before {
+    content: '';
+    @apply pattern-dots pattern-primary-500 pattern-bg-primary-100 pattern-size-2 opacity-60 absolute bottom-0 right-0 w-[30%] h-[35%]
+
+  }
+  

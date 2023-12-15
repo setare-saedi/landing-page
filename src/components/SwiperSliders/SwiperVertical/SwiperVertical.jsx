@@ -35,23 +35,23 @@ function SwiperVertical({ info }) {
           info.map((card, index) => (
             <div className='  relative' key={card.id}>
               <SwiperSlide className=' swiper-slide-vertical ' key={card.id}>
-                <div className=' vertical-card px-6 mx-12 space-y-8 pt-6 pb-12 dark:bg-gray-700 dark:shadow-2xl dark:shadow-gray-600'>
-                  <div className='flex justify-between items-center'>
-                    <span className=' text-sm lg:text-lg text-gray-400'>
+                <div className=' vertical-card '>
+                  <div className='vertical-card-header '>
+                    <span className='vertical-card-header-right '>
                       {card.subTitle}
                     </span>
-                    <span className='text-sm lg:text-lg text-violet-800 font-bold dark:text-violet-300'>
+                    <span className='vertical-card-header-left '>
                       {card.logo}
                     </span>
                   </div>
-                  <div className=' text-lg lg:text-2xl font-bold text-violet-900 dark:text-violet-200'>{card.title}</div>
-                  <div className='  pb-10  text-sm lg:text-xl'>
-                    <p className=' leading-loose max-sm:text-justify'>{card.description}</p>
+                  <div className='vertical-card-title '>{card.title}</div>
+                  <div >
+                    <p className='vertical-card-text '>{card.description}</p>
                   </div>
 
                 </div>
-                <div className=' z-50 relative flex justify-center items-end '>
-                <div className='num  border-2 border-violet-800 flex justify-center items-center rounded-full text-sm lg:text-3xl font-bold p-2 w-12 h-12 lg:w-16 lg:h-16 bg-violet-800 text-white'>
+                <div className='vertical-footer '>
+                <div className='vertical-footer-content num '>
                   {index + 1}
                 </div>
               </div>

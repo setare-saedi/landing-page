@@ -1,0 +1,6 @@
+.footer{
+    @apply flex flex-col bg-[#001149] px-12 py-4
+}
+.footer-txt{
+    @apply text-white text-center
+}

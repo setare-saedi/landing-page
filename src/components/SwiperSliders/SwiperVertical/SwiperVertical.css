@@ -18,9 +18,29 @@
   direction: ltr;
 }
 .vertical-card{
-  background: #fff;
   box-shadow: 5px 5px 15px 15px rgb(241, 241, 241);
-
+@apply bg-white px-6 mx-12 space-y-8 pt-6 pb-12 dark:bg-gray-700 dark:shadow-2xl dark:shadow-gray-600
+}
+.vertical-card-header{
+  @apply flex justify-between items-center
+}
+.vertical-card-header-right{
+  @apply text-sm lg:text-lg text-gray-400
+}
+.vertical-card-header-left{
+  @apply text-sm lg:text-lg text-violet-800 font-bold dark:text-violet-300
+}
+.vertical-card-title{
+  @apply text-lg lg:text-2xl font-bold text-violet-900 dark:text-violet-200
+}
+.vertical-card-text{
+  @apply leading-loose max-sm:text-justify  pb-10  text-sm lg:text-xl
+}
+.vertical-footer{
+  @apply z-50 relative flex justify-center items-end 
+}
+.vertical-footer-content{
+  @apply  border-2 border-violet-800 flex justify-center items-center rounded-full text-sm lg:text-3xl font-bold p-2 w-12 h-12 lg:w-16 lg:h-16 bg-violet-800 text-white
 }
 .swiper-vertical .swiper-pagination-bullet{
   background-color: blueviolet;
@@ -36,7 +56,6 @@
   right: -3%;
   background-image: linear-gradient(-45deg, #c084fc 25%, transparent 25%, transparent 50%, #c084fc 50%, #c084fc 75%, transparent 75%, #fff);
   background-size: 25px 25px;
-  z-index: -10;
 }
 .vertical-bg-dots{
   width: 200px;
@@ -47,10 +66,8 @@
   left: -1%;
   background-image: radial-gradient(circle at 1px 1px, #c084fc 1.5px, transparent 0);
   background-size: 10px 10px;
-  z-index: -1;
 }
 .num{
  position: absolute;
  bottom: -30px;
- z-index: 500;
 }

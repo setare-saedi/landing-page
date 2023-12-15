@@ -1,0 +1,37 @@
+.services{
+    @apply my-32 max-sm:my-10 flex flex-col lg:flex-row gap-16 px-12 mx-4  max-md:px-4 
+}
+.services-body{
+    @apply lg:w-2/5 text-center lg:text-right flex flex-col
+}
+.services-title{
+    @apply text-4xl leading-relaxed max-md:text-lg
+}
+.services-title-brand{
+    @apply text-rose-600 font-bold 
+}
+.services-text{
+    @apply text-xl my-4 dark:text-gray-300 text-gray-600 text-justify max-lg:text-center max-lg:text-base leading-normal  max-md:text-justify
+}
+.services-btn{
+    @apply flex xl:flex-row justify-center xl:justify-start gap-6 lg:flex-col max-md:flex-row max-sm:flex-col 
+}
+.services-images{
+    @apply  lg:w-3/5 xl:w-3/4 max-lg:hidden  flex justify-center items-center  relative 
+}
+.services-img-bg{
+   @apply w-[80%] h-[90%] absolute bg-primary-200 opacity-90 top-[10%] right-[10%] rounded-md
+}
+.services-img-bg::after{
+    content: '';
+    background:
+    radial-gradient(farthest-side at 50% 125%, #0000 47%, rgb(153, 137, 225) 55% 45%, transparent 44%),
+    radial-gradient(farthest-side at 50% -15%, #0000 47%, rgb(153, 137, 225) 55% 45%, transparent 44%);
+  background-size: 200px 40px;
+  background-position: 100px 20px, 0px 20px;
+  transform: rotate(35deg);
+    @apply absolute bottom-0 right-[20%] w-full h-[80%]  
+}
+.services-img{
+    @apply transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-700 relative z-40 w-[690px] h-[480px] max-xl:w-[490] max-xl:h-[380px] 
+}

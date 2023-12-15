@@ -1,0 +1,26 @@
+.header{
+    @apply px-4 items-center  py-4   absolute z-50 top-0 left-0 right-0 w-full
+}
+.nav{
+    @apply flex justify-between items-center
+}
+.nav-items{
+    @apply flex flex-1 flex-row text-lg justify-center items-center gap-10 max-lg:hidden
+}
+
+.nav-link{
+    @apply dark:text-gray-800 border-r-2  border-violet-900 pr-2 hover:border-violet-400
+}
+.nav-divide{
+    @apply  divide-y-2 divide-violet-50
+}
+.logo{
+    @apply flex items-center
+}
+.logo-name{
+    @apply dark:text-white text-xl font-extralight
+}
+
+.btn-darkMode{
+    @apply hover:text-violet-500 text-3xl  
+}

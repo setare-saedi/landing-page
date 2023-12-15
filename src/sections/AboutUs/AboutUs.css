@@ -1,0 +1,48 @@
+.about{
+    @apply flex xl:flex-row flex-col my-4 p-6 bg-violet-50 dark:bg-[#022b42]  relative gap-5
+}
+.about-body{
+    @apply  flex flex-col items-center justify-center
+}
+.about-title{
+    @apply text-center text-4xl
+}
+.about-title-brand{
+    @apply text-rose-700
+}
+.about-text{
+    @apply text-center dark:text-gray-100 mb-12 mt-6 max-w-4xl max-sm:text-justify leading-loose
+}
+.about-cards{
+    @apply flex lg:flex-row flex-col gap-2 justify-evenly items-center 
+}
+.about-card{
+    @apply h-full flex flex-col flex-1 relative dark:bg-[#004d74] bg-white text-center 
+}
+.about-card-header{
+    @apply flex justify-between items-center p-8 
+}
+.about-card-img{
+    @apply flex justify-center items-center w-28 h-28 border-2 border-violet-50  rounded-full
+}
+.about-card-header-right{
+    @apply  text-violet-600 text-3xl font-bold
+}
+.about-card-header-left{
+    @apply  text-violet-300 font-bold text-lg
+}
+.about-card-body{
+    @apply flex gap-9  flex-1 justify-center items-center flex-col
+}
+.about-card-text{
+    @apply text-gray-500 dark:text-gray-200 pb-6  leading-7 max-sm:text-justify
+}
+.about-card-social{
+    @apply relative  flex flex-row justify-center pb-16 gap-6 mb-6
+}
+.about-social-link{
+    @apply hover:bg-violet-900 hover:text-violet-50 hover:rounded-sm transition ease-in delay-150 hover:-translate-y-1 hover:scale-105 duration-700 bg-violet-100 text-violet-900 p-1 w-8 h-8
+}
+.about-card-footer{
+    @apply w-[25%] h-[5px] absolute left-0 bottom-[7%] bg-primaryDark-400
+}

@@ -1,22 +1,26 @@
 
-/* .swiper-card {
-  width: 90%;
-  padding: 10px;
-} */
 
-/* .swiper-slide-card {
-  display: flex; 
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 18px;
-  font-size: 22px;
-  font-weight: bold;
-  color: #fff;
-} */
 .swiper-card{
   height: unset;
-  min-height: max-content;
+  @apply min-h-max rounded-lg p-3 flex flex-wrap flex-col items-stretch justify-center 
+}
+.swiper-card-header{
+  @apply flex justify-between
+}
+.swiper-card-header-right{
+  @apply text-sm font-bold text-gray-500
+}
+.swiper-card-header-left{
+  @apply font-bold text-sm text-violet-600
+}
+.swiper-card-body{
+  @apply p-6 text-center flex justify-center flex-col items-center space-y-2 overflow-hidden
+}
+.swiper-card-img{
+  @apply flex justify-center items-center w-11 h-11 bg-violet-200  rounded-full
+}
+.swiper-card-text{
+  @apply flex-1 text-sm  mt-2 max-sm:text-justify
 }
 .swiper-card:nth-child(odd) {
   background-color: rgb(234, 214, 254);

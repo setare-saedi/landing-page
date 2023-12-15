@@ -1,25 +1,22 @@
 export const navLinks = [
     { id: 1, label: 'خانه', href: '#home' },
-    { id: 2, label: 'محصولات', href: '#products' },
-    { id: 3, label: 'درباره ما', href: '#about-us' },
-    { id: 4, label: 'تماس با ما', href: '#contact-us' },
+    { id: 2, label: 'دوره ها', href: '#home' },
+    { id: 3, label: 'نمونه کارها', href: '#home' },
+    { id: 4, label: 'سرویس ها', href: '#products' },
+    { id: 5, label: 'درباره ما', href: '#about-us' },
+    { id: 6, label: 'تماس با ما', href: '#contact-us' },
 ]
 export const statistics = [
-    { id: 1, label: 'فروش', value: 130 },
-    { id: 2, label: 'دانلود', value: 165 },
-    { id: 3, label: 'محصولات', value: 103 }
+    { id: 1, label: 'طرح ها', value: 130 },
+    { id: 2, label: 'نمونه کارها', value: 95 },
+    { id: 3, label: 'سرویس ها', value: 57 }
 ]
 export const slideImg = [
     { id: 1, src: './img/1p.png' },
     { id: 2, src: './img/2p.png' },
     { id: 3, src: './img/3p.png' },
 ]
-export const products = [
-    { id: 1, name: 'لورم ایپسوم', price: '1200000', imgUrl: 'img/1p.png' },
-    { id: 2, name: 'لورم ایپسوم فارسی', price: '200000', imgUrl: 'img/2p.png' },
-    { id: 3, name: 'تولید لورم', price: '800000', imgUrl: 'img/3p.png' },
-    { id: 4, name: 'آموزش Lorm فارسی ', price: '0', imgUrl: 'img/5p.png' },
-]
+
 export const cards = [
     { id: 20, title: 'لورم متن ساختکی', subTitle: 'طراحی سایت', logo: 'PHP', iconUrl: './img/icon2.png', description: 'طراحان سایت هنگام طراحی قالب سایت معمولا با این موضوع رو برو  روزنامه و مجله در ستون و سطرآنچنان که لازم است هستند که محتوای اصلی صفحات آماده نیست.' },
     { id: 10, title: 'لورم ایپسوم', subTitle: 'تولید متن', logo: 'JS', iconUrl: './img/icon1.png', description: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز  متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز استفاده از طراحان گرافیک است.' },
