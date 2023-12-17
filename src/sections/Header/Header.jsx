@@ -30,7 +30,7 @@ function Header({ navLink, toggleDarkMode, darkMode }) {
           {navLink.map(item => <div key={item.id}><a href={item.href}>{item.label}</a></div>)}
         </ul>
 
-        <div className={`${showMenu ? 'fixed top-0 right-0 z-50' : 'hidden'} p-6 min-h-screen lg:hidden  bg-violet-200 w-full rounded-xl`}>
+        <div className={`${showMenu ? 'fixed top-0 right-0 z-50' : 'hidden'} p-6 min-h-screen lg:hidden  bg-primary-200 w-full rounded-xl`}>
           <div className=' flex flex-col '>
             <div className='nav-divide '>
               <div className=' flex justify-between items-center mb-4'>

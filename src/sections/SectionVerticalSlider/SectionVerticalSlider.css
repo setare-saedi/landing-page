@@ -11,5 +11,5 @@
     @apply text-4xl font-bold text-center lg:text-right
 }
 .svs-text{
-    @apply text-xl dark:text-gray-300 text-gray-600 lg:max-w-lg text-center lg:text-right max-lg:text-center max-lg:text-base leading-normal  max-md:text-justify max-sm:text-justify
+    @apply text-xl dark:text-secondary-300 text-secondary-600 lg:max-w-lg text-center lg:text-right max-lg:text-center max-lg:text-base leading-normal  max-md:text-justify max-sm:text-justify
 }

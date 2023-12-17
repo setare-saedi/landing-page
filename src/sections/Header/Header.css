@@ -9,10 +9,10 @@
 }
 
 .nav-link{
-    @apply dark:text-gray-800 border-r-2  border-violet-900 pr-2 hover:border-violet-400
+    @apply dark:text-secondary-900 border-r-2  border-primary-900 pr-2 hover:border-primary-400
 }
 .nav-divide{
-    @apply  divide-y-2 divide-violet-50
+    @apply  divide-y-2 divide-primary-50
 }
 .logo{
     @apply flex items-center
@@ -22,5 +22,5 @@
 }
 
 .btn-darkMode{
-    @apply hover:text-violet-500 text-3xl  
+    @apply hover:text-primary-500 text-3xl  
 }

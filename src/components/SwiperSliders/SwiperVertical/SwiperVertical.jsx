@@ -17,7 +17,7 @@ function SwiperVertical({ info }) {
   return (
     <>
 
-<div className='vertical-bg-strip'></div>
+<div className='vertical-bg-wavy'></div>
 <div className='vertical-bg-dots'></div>
       <Swiper
 

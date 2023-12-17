@@ -8,62 +8,48 @@
 @import './sections/Services/Services.css';
 @import './sections/Samples/Samples.css';
 @import './sections/AboutUs/AboutUs.css';
-@import './sections/ContactUs/ContactUs.css';
 @import './components/Bg/Bg.css';
 @import './sections/Footer/Footer.css';
 @import './components/SwiperSliders/SwiperCards/SwiperCards.css';
 @import './components/ImgSlider/SlidItem.css';
+@import './sections/ContactUs/ContactUs.css';
+@import './sections/Card/Cards.css';
+@import './components/SwiperSliders/SwiperFreeMode/SwiperFreeMode.css';
 
-:root {
-  --clr-bg-dark: #011728; /* gray-800 */
-  --clr-bg-light: #fafafa; /* zinc-50 */
 
-  --clr-text-dark: #1f2937; /* gray-200 */
-  --clr-text-light: #fafafa; /* zinc-50 */
-}
 .light {
-  background-color: var(--clr-bg-light);
-  color: var(--clr-text-dark);
+  @apply bg-primary-50 text-primary-975
 }
 .dark {
-  background-color: var(--clr-bg-dark);
-  color: var(--clr-text-light);
+  @apply bg-primary-975 text-primary-50
 }
 
 body {
-  margin: 0;
-  font-family: 'Vazir', sans-serif;
+  @apply font-vazir m-0
 }
 
 a:hover {
-  @apply transition duration-500 ease-in-out text-violet-700;
+  @apply transition duration-500 ease-in-out text-primary-500;
 }
 
 @layer base {
-  * {
-    font-family: Vazirmatn, sans-serif;
-    font-feature-settings: 'ss01';
-  }
+
 }
 
 .btn {
-  @apply transition ease-in-out delay-150 hover:-translate-x-1 hover:scale-105 duration-700 bg-violet-500 text-lg max-lg:text-sm text-white rounded-md px-8 py-2 border-2 border-violet-400 hover:bg-violet-800 shadow-2xl shadow-violet-200 dark:shadow-gray-900;
+  @apply transition ease-in-out delay-150 hover:-translate-x-1 hover:scale-105 duration-700 bg-primary-500 text-lg max-lg:text-sm text-white rounded-md px-8 py-2 border-2 border-primary-400 hover:bg-primary-800 shadow-2xl shadow-primary-200 dark:shadow-gray-900;
 }
 
 .btn-outline {
-  @apply text-lg max-lg:text-sm transition ease-in-out delay-150 hover:-translate-x-1 hover:scale-105 duration-700 border-2 rounded-md border-violet-400 px-8 py-2 hover:bg-violet-200 hover:border-violet-100 shadow-2xl shadow-violet-200 dark:shadow-gray-900;
+  @apply text-lg max-lg:text-sm transition ease-in-out delay-150 hover:-translate-x-1 hover:scale-105 duration-700 border-2 rounded-md border-primary-400 px-8 py-2 hover:bg-primary-200 hover:border-primary-100 shadow-2xl shadow-primary-200 dark:shadow-gray-900 dark:hover:text-primary-950;
 }
 
-
 .scroll-to-top {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   direction: ltr !important;
-  position: fixed;
   bottom: 10px !important;
   left: 10px !important;
   right: unset;
   border-radius: 100% !important;
-  background-color: rgb(129, 2, 255) !important;
+  background-color: rgb(0, 0, 77) !important;
+  @apply flex justify-center items-center fixed 
 }

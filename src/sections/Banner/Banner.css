@@ -8,7 +8,7 @@
     @apply mb-3  text-3xl max-md:text-base bg-clip-text font-extrabold text-transparent bg-gradient-to-tr  from-blue-900 to-pink-400
 }
 .banner-title{
-    @apply relative xl:text-8xl text-3xl my-4 font-semibold z-10 xl:whitespace-nowrap max-md:text-lg 
+    @apply z-20 relative xl:text-8xl text-3xl my-4 font-semibold xl:whitespace-nowrap max-md:text-lg 
 }
 .banner-title-bg{
     @apply bg-primary-200 dark:text-primary-100 dark:bg-primaryDark-600 text-black
@@ -23,16 +23,16 @@
     @apply flex justify-between text-center gap-10 max-sm:gap-2 max-sm:justify-evenly  py-4
 }
 .banner-counter-label{
-    @apply text-2xl dark:text-gray-400 text-gray-600 max-sm:text-sm max-sm:font-bold
+    @apply text-2xl dark:text-secondary-400 text-secondary-600 max-sm:text-sm max-sm:font-bold
 }
 .banner-counter-value{
-    @apply text-4xl my-4 dark:text-primary-400 text-primaryDark-200 font-bold max-sm:text-sm 
+    @apply text-4xl my-4 dark:text-primary-300 text-primary-700 font-bold max-sm:text-sm 
 }
 .banner-img{
-    @apply cursor-pointer min-h-full   bg-primary-100    flex justify-center items-center  relative
+    @apply cursor-pointer min-h-full bg-primary-100 flex justify-center items-center relative
 }
 .banner-img-items{
-    @apply z-20 flex overflow-hidden absolute -bottom-10 gap-4 justify-center items-center
+    @apply  flex overflow-hidden absolute -bottom-10 gap-4 justify-center items-center
 }
 .banner-img::after{
     content: '';

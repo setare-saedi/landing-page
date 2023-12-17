@@ -11,7 +11,7 @@
     @apply text-rose-700 
 }
 .samples-text{
-    @apply text-xl dark:text-gray-300 text-gray-800 text-justify max-lg:text-center max-lg:text-base leading-normal max-md:text-justify  max-md:text-sm
+    @apply text-xl dark:text-secondary-300 text-secondary-800 text-justify max-lg:text-center max-lg:text-base leading-normal max-md:text-justify  max-md:text-sm
 }
 .samples-btn{
     @apply max-lg:text-center
@@ -23,19 +23,16 @@
     @apply flex xl:justify-end justify-center relative 
 }
 .samples-img{
-    @apply bg-violet-200 rounded-md 
+    @apply bg-primary-200 rounded-md 
 }
 .samples-img-bottom-wrapper{
     @apply hidden sm:flex flex-row flex-1  items-center  justify-center gap-4 my-4
 }
 .samples-img-hover{
-    @apply py-2 opacity-0 group-hover:opacity-100 duration-500 absolute inset-x-0 bottom-0 flex justify-center items-center text-3xl bg-opacity-70 bg-gray-300 text-violet-900 font-bold
+    @apply py-2 opacity-0 group-hover:opacity-100 duration-500 absolute inset-x-0 bottom-0 flex justify-center items-center text-3xl bg-opacity-70 bg-secondary-300 text-primary-900 font-bold
 
 }
 .offer::before {
     content: url(./../../../public/img/offer.png);
-    position: absolute;
-    top: -15px;
-    left: -12px;
-    transform: rotate(-45deg);
+    @apply absolute -top-4 -left-3 -rotate-45
   }

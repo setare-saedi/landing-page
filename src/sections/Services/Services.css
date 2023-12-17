@@ -11,7 +11,7 @@
     @apply text-rose-600 font-bold 
 }
 .services-text{
-    @apply text-xl my-4 dark:text-gray-300 text-gray-600 text-justify max-lg:text-center max-lg:text-base leading-normal  max-md:text-justify
+    @apply text-xl my-4 dark:text-secondary-300 text-secondary-600 text-justify max-lg:text-center max-lg:text-base leading-normal  max-md:text-justify
 }
 .services-btn{
     @apply flex xl:flex-row justify-center xl:justify-start gap-6 lg:flex-col max-md:flex-row max-sm:flex-col 
@@ -20,13 +20,13 @@
     @apply  lg:w-3/5 xl:w-3/4 max-lg:hidden  flex justify-center items-center  relative 
 }
 .services-img-bg{
-   @apply w-[80%] h-[90%] absolute bg-primary-200 opacity-90 top-[10%] right-[10%] rounded-md
+   @apply w-[80%] h-[90%] absolute bg-primary-100 opacity-90 top-[10%] right-[10%] rounded-md
 }
 .services-img-bg::after{
     content: '';
     background:
-    radial-gradient(farthest-side at 50% 125%, #0000 47%, rgb(153, 137, 225) 55% 45%, transparent 44%),
-    radial-gradient(farthest-side at 50% -15%, #0000 47%, rgb(153, 137, 225) 55% 45%, transparent 44%);
+    radial-gradient(farthest-side at 50% 125%, #0000 47%, rgb(100, 113, 255) 55% 45%, transparent 44%),
+    radial-gradient(farthest-side at 50% -15%, #0000 47%, rgb(100, 113, 255) 55% 45%, transparent 44%);
   background-size: 200px 40px;
   background-position: 100px 20px, 0px 20px;
   transform: rotate(35deg);

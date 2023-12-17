@@ -1,5 +1,5 @@
 .footer{
-    @apply flex flex-col bg-[#001149] px-12 py-4
+    @apply flex flex-col bg-primary-975 dark:bg-secondary-900 px-12 py-4 mt-2
 }
 .footer-txt{
     @apply text-white text-center

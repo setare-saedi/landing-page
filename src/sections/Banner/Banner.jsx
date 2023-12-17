@@ -30,7 +30,7 @@ export default function Banner({statistics , slideImg}){
           </div>
 
           <div className='banner-img bg-img' >
-            <img src={bigImage} className='z-20' alt='laptop' width={610} height={500} />
+            <img src={bigImage} className='z-10' alt='laptop' width={610} height={500} />
             <div className='banner-img-items '>
               {slideImg.map(image => <SlideItems key={image.id} imgUrl={image.src} bigImgUrl={bigImage} changeBigImg={(e) => (setBigImage(e))} />)
               }

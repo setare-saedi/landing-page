@@ -1,21 +1,38 @@
 .swiper-slide-free { 
-    min-height: max-content;
     height: unset !important; 
-  }
-  .card{
     box-shadow: 0px 0px 30px #00000045;
-    min-height: max-content;
     height: unset !important;
-    /* background-color: rgb(254, 253, 255); */
+    @apply min-h-max relative space-y-6 px-6 py-6 overflow-hidden bg-white dark:bg-primary-700 dark:text-secondary-100 text-primary-975 pt-10 pb-8 transition-all duration-700 hover:-translate-y-1  sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10
 }
 
-.SwiperFreeMode .swiper-pagination-bullet{
-    background-color: rgb(142, 44, 247);
-    width: 2%;
-    height: 5px;
-    border-radius: 0%;
+.SwiperFreeMode .swiper-pagination-bullet{  
     margin: 1% !important;
    bottom: 0 !important; 
+   @apply bg-primary-700 dark:bg-primary-100 w-[2%] h-[5px] rounded-none
 
   }
-  
+
+  .swiper-free-container{
+    @apply md:grid md:gap-8  md:grid-cols-2 xl:grid-cols-3 xl:gap-8 mx-16
+  }
+  .swiper-free-header {
+    @apply flex justify-between items-start dark:text-secondary-300 text-gray-600 transition-all duration-700 group-hover:text-gray-200
+  }
+  .swiper-free-body{
+    @apply flex gap-9  flex-1 justify-center items-center flex-col
+  }
+  .swiper-free-img{
+    @apply  flex relative justify-center items-center w-28 h-28  place-items-center rounded-full bg-primary-400 transition-all duration-700 group-hover:bg-white
+  }
+  .swiper-free-img-effect{
+    @apply z-[-1] absolute top-0  h-28 w-28 rounded-full bg-primary-400 transition-all duration-700 group-hover:scale-[10] 
+  }
+  .swiper-free-title{
+    @apply text-2xl font-bold text-primary-800 dark:text-secondary-200 transition-all duration-700 group-hover:text-primary-900
+  }
+  .swiper-free-description{
+    @apply text-center  text-gray-900 dark:text-secondary-100 transition-all duration-700 group-hover:text-white
+  }
+  .swiper-free-text{
+    @apply pb-16 mb-3 leading-7 max-sm:text-justify
+  }

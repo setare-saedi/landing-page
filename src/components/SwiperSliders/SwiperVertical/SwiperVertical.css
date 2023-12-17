@@ -1,21 +1,12 @@
 .swiper-vertical {
-  width: 100%;
-  height: 100%;
-  background-color: inherit;
+  @apply w-full h-full bg-inherit
 }
 .swiper-slide-vertical {
-  text-align: center;
-  font-size: 18px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @apply flex flex-col justify-center items-center text-xl text-center
 }
 .swiper-vertical > .swiper-pagination-bullets, .swiper-pagination-vertical.swiper-pagination-bullets{
-  position: absolute;
-  left: 20px;
-  top: 50%;
   direction: ltr;
+  @apply absolute left-5 top-[50%]
 }
 .vertical-card{
   box-shadow: 5px 5px 15px 15px rgb(241, 241, 241);
@@ -28,10 +19,10 @@
   @apply text-sm lg:text-lg text-gray-400
 }
 .vertical-card-header-left{
-  @apply text-sm lg:text-lg text-violet-800 font-bold dark:text-violet-300
+  @apply text-sm lg:text-lg text-primary-800 font-bold dark:text-primary-300
 }
 .vertical-card-title{
-  @apply text-lg lg:text-2xl font-bold text-violet-900 dark:text-violet-200
+  @apply text-lg lg:text-2xl font-bold text-primary-900 dark:text-primary-200
 }
 .vertical-card-text{
   @apply leading-loose max-sm:text-justify  pb-10  text-sm lg:text-xl
@@ -40,34 +31,18 @@
   @apply z-50 relative flex justify-center items-end 
 }
 .vertical-footer-content{
-  @apply  border-2 border-violet-800 flex justify-center items-center rounded-full text-sm lg:text-3xl font-bold p-2 w-12 h-12 lg:w-16 lg:h-16 bg-violet-800 text-white
+  @apply  border-2 border-primary-800 flex justify-center items-center rounded-full text-sm lg:text-3xl font-bold p-2 w-12 h-12 lg:w-16 lg:h-16 bg-primary-800 text-white
 }
 .swiper-vertical .swiper-pagination-bullet{
-  background-color: blueviolet;
-  width: 15px;
-  height: 15px;
+  @apply w-[15px] h-[15px] bg-primary-800
 }
-.vertical-bg-strip{
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  position: absolute;
-  top:-1%;
-  right: -3%;
-  background-image: linear-gradient(-45deg, #c084fc 25%, transparent 25%, transparent 50%, #c084fc 50%, #c084fc 75%, transparent 75%, #fff);
-  background-size: 25px 25px;
+.vertical-bg-wavy{
+  @apply absolute top-5 -right-2 w-52 h-52 pattern-wavy pattern-primary-800 dark:pattern-primary-500 pattern-bg-white dark:pattern-bg-primary-975 pattern-size-6 opacity-90 rounded-full;
+
 }
 .vertical-bg-dots{
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  position: absolute;
-  bottom: -5%;
-  left: -1%;
-  background-image: radial-gradient(circle at 1px 1px, #c084fc 1.5px, transparent 0);
-  background-size: 10px 10px;
+  @apply pattern-cross pattern-primary-700 pattern-bg-primary-50 dark:pattern-bg-primary-975 dark:pattern-primary-200 pattern-size-6 opacity-100 absolute bottom-0 left-[1%] w-56 h-56 rounded-full 
 }
 .num{
- position: absolute;
- bottom: -30px;
+ @apply absolute -bottom-[30px]
 }

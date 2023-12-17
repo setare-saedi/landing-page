@@ -1,35 +1,35 @@
 .wavy-lg {
-    @apply absolute top-0 right-0 w-80 h-80 pattern-wavy pattern-blue-900 pattern-bg-white pattern-size-6 opacity-90 rounded-full;
+    @apply absolute top-0 right-0 w-80 h-80 pattern-wavy pattern-primary-900 dark:pattern-primary-950 pattern-bg-white dark:pattern-bg-primary-200 pattern-size-6 opacity-90 rounded-full;
 }
 
 .zigzag-lg {
-    @apply pattern-zigzag pattern-gray-500 pattern-bg-white pattern-size-6 opacity-90 absolute bottom-0 right-[20%] w-60 h-60 rounded-full -rotate-45
+    @apply pattern-zigzag pattern-primary-900 dark:pattern-primary-950 pattern-bg-white dark:pattern-bg-primary-300 pattern-size-6 opacity-90 absolute bottom-[20%] right-[75%] w-60 h-60 rounded-full -rotate-45
 }
 
 .zigzag-sm {
-    @apply pattern-zigzag pattern-gray-500 pattern-bg-white pattern-size-6 opacity-90 absolute top-0 right-[30%] w-80 h-80 rounded-full -rotate-45
+    @apply pattern-zigzag pattern-primary-900 dark:pattern-primary-950 pattern-bg-white dark:pattern-bg-primary-400 pattern-size-6 opacity-90 absolute bottom-0 right-12 w-80 h-80 rounded-full -rotate-45
 }
 
 .zigzag-3d {
-    @apply pattern-zigzag-3d pattern-gray-500 pattern-bg-white pattern-size-6 opacity-90 absolute bottom-0 right-[21%] w-60 h-60 rounded-full -rotate-45
+    @apply pattern-zigzag-3d pattern-primary-900 dark:pattern-primary-950 pattern-bg-white dark:pattern-bg-primary-300 pattern-size-6 opacity-90 absolute bottom-[5%] right-[20%] w-60 h-60 rounded-full -rotate-45
 }
 
 .cross-lg {
-    @apply pattern-cross pattern-black pattern-bg-white pattern-size-6 opacity-100 absolute top-0 left-[1%] w-80 h-80 rounded-full
+    @apply pattern-cross pattern-primary-900 dark:pattern-primary-50 pattern-bg-white dark:pattern-bg-primary-950 pattern-size-6 opacity-100 absolute top-0 left-[1%] w-80 h-80 rounded-full
 }
 
 .dots-lg {
-    @apply pattern-dots pattern-blue-900 pattern-bg-white pattern-size-6 opacity-60 absolute top-0 left-[1%] w-80 h-80 rounded-full
+    @apply pattern-dots pattern-primary-900 dark:pattern-primary-100 pattern-bg-white dark:pattern-bg-primary-950 pattern-size-6 opacity-60 absolute top-0 left-[1%] w-80 h-80 rounded-full
 }
 
 .lines-lg {
-    @apply pattern-lines pattern-blue-500 pattern-bg-white pattern-size-4 opacity-90 absolute bottom-0 right-[40%] w-80 h-80 rounded-full -rotate-45
+    @apply pattern-lines pattern-primary-800 pattern-bg-white dark:pattern-bg-primary-500 pattern-size-4 opacity-90 absolute top-0 right-[40%] w-56 h-56 rounded-full -rotate-45
 }
 
 .circle {
-    @apply absolute bottom-0 left-0 w-24 h-24 rounded-full border-8 border-black
+    @apply absolute bottom-8 left-0 w-24 h-24 rounded-full border-8 border-primary-900 dark:border-secondary-300
 }
 
 .circle-solid {
-    @apply absolute top-0 right-[80%] w-20 h-20 bg-black rounded-full
+    @apply absolute bottom-[30%] left-[40%] w-32 h-32 bg-primary-900 rounded-full dark:bg-secondary-300
 }
