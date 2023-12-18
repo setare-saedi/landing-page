@@ -5,12 +5,12 @@ function Bg() {
         <>
             <div>
                 <div className='wavy-lg '></div>
-                <div class="zigzag-lg"></div>
-                <div class="zigzag-3d"></div>
-                <div class="zigzag-sm"></div>
-                <div class=" lines-lg"></div>
-                <div class="cross-lg"></div>
-                <div class="dots-lg"></div>
+                <div className="zigzag-lg"></div>
+                <div className="zigzag-3d"></div>
+                <div className="zigzag-sm"></div>
+                <div className=" lines-lg"></div>
+                <div className="cross-lg"></div>
+                <div className="dots-lg"></div>
                 <div className=' circle'></div>
                 <div className=' circle-solid'></div>
             </div>

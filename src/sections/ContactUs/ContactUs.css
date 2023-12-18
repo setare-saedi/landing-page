@@ -17,7 +17,7 @@
     @apply dark:text-gray-400 text-lg max-sm:text-base text-gray-700 mt-3 mx-4
 }
 .contact-social{
-    @apply flex  gap-3 my-6
+    @apply flex  gap-3 my-6 justify-center items-center lg:justify-start
 }
 .contact-social-link{
     @apply transition duration-700 ease-in-out  hover:bg-primary-200 hover:text-primary-800 bg-primary-800 text-white p-2 w-12 h-12 rounded-full
@@ -27,7 +27,7 @@
 }
 .contact-form{
     @apply  dark:text-gray-900 relative dark:bg-primary-800 border-2 shadow-lg shadow-primary-200
-    dark:shadow-primary-800 dark:border-primary-800  my-10 px-8 py-10 bg-primary-100  lg:w-[90%] mx-auto 
+    dark:shadow-primary-800 dark:border-primary-800  my-10 px-8 py-10 bg-primary-100  lg:w-[90%] mx-auto max-sm:mx-0
 }
 .form-body{
     @apply space-y-10 z-50

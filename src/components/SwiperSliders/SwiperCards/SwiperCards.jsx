@@ -24,7 +24,7 @@ function SwiperCards({ allCard }) {
               </div>
               <div  className='swiper-card-body '>
                 <div className='swiper-card-img '>
-                  <img src={card.iconUrl} alt={card.title} width={24} height={24} className=''/>
+                  <img src={card.iconUrl} alt={card.title} width={24} height={24} />
                 </div>
                 <h3 className=' text-xl font-bold'>{card.title}</h3>
                 <div className='swiper-card-text '>{card.description}</div>

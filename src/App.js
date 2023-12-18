@@ -1,7 +1,6 @@
-import React from 'react';
-import { useState } from 'react';
-import './App.css';
-import { navLinks, statistics, slideImg, cards, managers, skills } from './constants';
+import React, { useState } from 'react';
+
+import { navLinks, statistics, slideImg, cards, managers } from './constants';
 import Header from './sections/Header/Header';
 import Footer from './sections/Footer/Footer';
 import Cards from './sections/Card/Cards';
@@ -18,7 +17,9 @@ import ScrollToTop from "react-scroll-to-top";
 import './index.css';
 
 function App() {
+
   const [darkMode, setDarkMode] = useState(false);
+
   function toggleDarkMode() {
     setDarkMode(!darkMode)
   }
@@ -28,7 +29,6 @@ function App() {
     ${darkMode ? "dark" : "light"}`}>
 
       <Header navLink={navLinks} darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-
       <main>
         <section  >
           <Banner statistics={statistics} slideImg={slideImg} />
@@ -37,23 +37,20 @@ function App() {
         <section >
           <SectionVerticalSlider cards={cards} />
         </section>
-
-        <section>
+        <section id='services'>
           <Services />
         </section>
-
-        <section className=' relative overflow-hidden'>
+        <section className=' relative overflow-hidden' id='courses'>
           <Cards cardInfo={cards} />
         </section>
-        <section>
+        <section id='samples'>  
           <Samples />
         </section>
-        <section>
+        <section id='about-us'>
           <AboutUs infos={managers} />
         </section>
-        <section>
+        <section id='contact-us'>
           <ContactUs />
-
         </section>
 
       </main>

@@ -1,4 +1,5 @@
-import React, {  useState } from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import emailjs from 'emailjs-com';
 
 import { ImFacebook } from 'react-icons/im';
@@ -103,18 +104,18 @@ function ContactUs() {
                     <div>
                         <h2 className=' contact-text'>ما را در شبکه های اجتماعی دنبال کنید.</h2>
                         <div className='contact-social '>
-                            <a href='#'>
+                            <Link to=''>
                                 <ImFacebook className='contact-social-link ' />
-                            </a>
-                            <a href='#'>
+                            </Link>
+                            <Link to=''>
                                 <FaTwitter className='contact-social-link ' />
-                            </a>
-                            <a href='#'>
+                            </Link>
+                            <Link to=''>
                                 <PiInstagramLogoFill className='contact-social-link ' />
-                            </a>
-                            <a href='#' className=''>
+                            </Link>
+                            <Link to='' className=''>
                                 <PiLinkedinLogoBold className='contact-social-link ' />
-                            </a>
+                            </Link>
 
                         </div>
                     </div>
@@ -205,7 +206,7 @@ function ContactUs() {
                                                 <Field disabled={inputDisabled} autoComplete="new-com" name="companyName" type="text" placeholder={'نام شرکت'} className={` form-input-default
                                                 ${!touched.companyName || inputDisabled ? 'form-input '
                                                         : ' form-input-success'} `} />
-                                                        
+
                                             </div>
                                         </div>
                                         <div className=' flex flex-col'>

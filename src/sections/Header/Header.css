@@ -5,11 +5,11 @@
     @apply flex justify-between items-center
 }
 .nav-items{
-    @apply flex flex-1 flex-row text-lg justify-center items-center gap-10 max-lg:hidden
+    @apply dark:text-primary-700 text-primary-975 flex flex-1 flex-row text-lg justify-center items-center gap-10 max-lg:hidden
 }
 
 .nav-link{
-    @apply dark:text-secondary-900 border-r-2  border-primary-900 pr-2 hover:border-primary-400
+    @apply dark:text-primary-700 text-primary-975 border-r-2  border-primary-900 pr-2 hover:border-primary-400
 }
 .nav-divide{
     @apply  divide-y-2 divide-primary-50

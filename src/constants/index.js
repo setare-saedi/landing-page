@@ -1,10 +1,10 @@
 export const navLinks = [
-    { id: 1, label: 'خانه', href: '#home' },
-    { id: 2, label: 'دوره ها', href: '#home' },
-    { id: 3, label: 'نمونه کارها', href: '#home' },
-    { id: 4, label: 'سرویس ها', href: '#products' },
-    { id: 5, label: 'درباره ما', href: '#about-us' },
-    { id: 6, label: 'تماس با ما', href: '#contact-us' },
+    { id: 1, label: 'خانه', href: '/' },
+    { id: 2, label: 'دوره ها', href: 'courses' },
+    { id: 3, label: 'نمونه کارها', href: 'samples' },
+    { id: 4, label: 'سرویس ها', href: 'services' },
+    { id: 5, label: 'درباره ما', href: 'about-us' },
+    { id: 6, label: 'تماس با ما', href: 'contact-us' },
 ]
 export const statistics = [
     { id: 1, label: 'طرح ها', value: 130 },
