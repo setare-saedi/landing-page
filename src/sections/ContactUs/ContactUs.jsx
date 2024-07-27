@@ -104,16 +104,16 @@ function ContactUs() {
                     <div>
                         <h2 className=' contact-text'>ما را در شبکه های اجتماعی دنبال کنید.</h2>
                         <div className='contact-social '>
-                            <Link to=''>
+                            <Link to='/'>
                                 <ImFacebook className='contact-social-link ' />
                             </Link>
-                            <Link to=''>
+                            <Link to='/'>
                                 <FaTwitter className='contact-social-link ' />
                             </Link>
-                            <Link to=''>
+                            <Link to='/'>
                                 <PiInstagramLogoFill className='contact-social-link ' />
                             </Link>
-                            <Link to='' className=''>
+                            <Link to='/' className=''>
                                 <PiLinkedinLogoBold className='contact-social-link ' />
                             </Link>
 
